@@ -1,0 +1,54 @@
+.social-box {
+  width: 1290px;
+  height: 105px;
+  padding-left: 30px;
+  &__title {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__link {
+    position: relative;
+    padding: 16px 26.5px 16px 68.5px;
+    margin-right: 25px;
+    background-color: #151515;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__link--facebook::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    background-image: url(../img/f.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 14px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+  &__link:hover {
+    opacity: 0.6;
+  }
+  &__link:active {
+    opacity: 0.3;
+  }
+  &__link--istagram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    background-image: url(../img/instagram-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 13px 14px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+}

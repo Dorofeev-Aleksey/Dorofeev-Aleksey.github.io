@@ -1,0 +1,115 @@
+.page-header {
+  &__logo {
+    width: 324px;
+    height: 58px;
+    margin-left: 20px;
+  }
+  &__container {
+    width: 100%;
+    padding: 0 0;
+  }
+  &__main-nav {
+    width: 426px;
+    height: 60px;
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  &__item {
+    padding: 18px 14px;
+    list-style-type: none;
+  }
+  &__item:hover {
+    opacity: 0.6;
+  }
+  &__item:active {
+    opacity: 1;
+  }
+  &__item:active &__link {
+    color: white;
+  }
+  &__link {
+    height: 60px;
+    color: #9b9a9b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__search {
+    width: 230px;
+    height: 46px;
+    padding-left: 50px;
+    padding-top: 14px;
+    & input {
+      width: 180px;
+      border: none;
+      background-color: black;
+      color: #ffffff;
+    }
+    & input::placeholder {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+    & button {
+      width: 22px;
+      height: 24px;
+      padding-bottom: 5px;
+      background-color: transparent;
+      border: none;
+      background-image: url(../img/search-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 0 6px;
+    }
+    & button:hover {
+      opacity: 0.6;
+    }
+    & button:active {
+      opacity: 0.3;
+    }
+    }
+    &__add-links {
+      display: flex;
+      width: 156px;
+      height: 58px;
+      padding-top: 2px;
+    }
+    &__add-item {
+       list-style-type: none;
+    }
+    &__add-link {
+      display: block;
+      width: 23px;
+      height: 23px;
+      margin-right: 25px;
+      font-size: 0;
+      text-decoration: none;
+    }
+    &__add-link:hover {
+      opacity: 0.6;
+    }
+    &__add-link:active {
+      opacity: 0.3;
+    }
+    &__add-link--faq {
+      background-image: url(../img/signin.svg);
+      background-repeat: no-repeat;
+      background-position: 2px 2px;
+    }
+    &__add-link--geo {
+      background-image: url(../img/trigger-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 4px 2px;
+    }
+    &__add-link--login {
+      background-image: url(../img/login-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 4px 3px;
+    }
+  }

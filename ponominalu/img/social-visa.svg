@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="11">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-826" y="-1510" width="1600" height="1635" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="rgb(255,255,255)" stroke="none" transform="translate(11.7867 0.211548)" d="M2.30083 0L0 10.72L2.78889 10.72L5.02 0L2.30083 0Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect x="-826" y="-1510" width="1600" height="1635" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<path fill="rgb(255,255,255)" stroke="none" transform="translate(0 0.141022)" d="M10.0411 0.0705263L7.18216 7.33474L5.99676 1.12842C5.8573 0.423158 5.29946 0.0705263 4.74162 0.0705263L0.0697297 0.0705263L0 0.352632C0.976216 0.564211 2.02216 0.916842 2.71946 1.26947C3.13784 1.48105 3.20757 1.69263 3.34703 2.18632L5.50865 10.72L8.4373 10.72L12.9 0L10.0411 0L10.0411 0.0705263Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_2">
+			<rect x="-826" y="-1510" width="1600" height="1635" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_2)">
+		<path fill="rgb(255,255,255)" stroke="none" transform="translate(24.0615 0.211548)" d="M5.29829 0L7.66857 0L9.76 10.72L7.25029 10.72L6.90171 9.0979L3.416 9.0979L2.85829 10.72L0 10.72L4.11314 0.775789C4.32229 0.282105 4.74057 0 5.29829 0ZM5.78629 2.89158L4.32229 6.91158L6.62286 6.91158L5.78629 2.89158Z" fill-rule="evenodd"/>
+	</g>
+	<defs>
+		<clipPath id="clip_3">
+			<rect x="-826" y="-1510" width="1600" height="1635" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_3)">
+		<path fill="rgb(255,255,255)" stroke="none" transform="translate(16.4595 0)" d="M3.97575 3.17308C3.97575 2.82051 4.3245 2.39744 5.1615 2.25641C5.58 2.1859 6.62625 2.1859 7.88175 2.75L8.37 0.49359C7.74225 0.282051 6.8355 0 5.78925 0C3.069 0 1.18575 1.48077 1.18575 3.52564C1.18575 5.07692 2.58075 5.92308 3.55725 6.41667C4.6035 6.91026 4.95225 7.26282 4.95225 7.75641C4.95225 8.46154 4.11525 8.8141 3.27825 8.8141C1.88325 8.8141 1.116 8.46154 0.48825 8.10897L0 10.4359C0.62775 10.7179 1.8135 11 3.069 11C5.92875 11 7.812 9.58974 7.812 7.33333C7.812 4.65385 3.906 4.44231 3.97575 3.17308Z"/>
+	</g>
+</svg>

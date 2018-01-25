@@ -1,0 +1,684 @@
+.form-title {
+  height: 140px;
+  width: 100%;
+  padding-top: 97px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #283645;
+  &__text {
+    width: 232px;
+    color: white;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+}
+
+.form {
+  &__description {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 43px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__full-name {
+    border: none;
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__full-name-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__full-name-list label {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d22856;
+    text-transform: uppercase;
+    margin-left: 18px;
+    margin-bottom: 8px;
+  }
+  &__full-name-list input {
+    width: 258px;
+    height: 59px;
+    padding-left: 18px;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 25px;
+  }
+  &__full-name-list input:hover {
+    border: 2px solid black;
+  }
+  &__full-name-list input:active {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+  &__full-name-list input:focus {
+    outline: none;
+  }
+  &__full-name-list input::-webkit-input-placeholder {
+    color: #283645;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  &__achievements {
+    width: 100%;
+    height: 604px;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  &__achievemets-wrap {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__achievements-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__achievements-item label {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    position: relative;
+    display: block;
+    margin-bottom: 55px;
+    margin-left: 55px;
+    cursor: pointer;
+  }
+  &__achievements-item input {
+    display: none;
+    width: 35px;
+    height: 35px;
+  }
+  &__achievements-item label:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: -4px;
+    left: -55px;
+    background-color: white;
+    border: 2px solid #e5e5e5;
+    cursor: pointer;
+  }
+  &__achievements-item label:hover:before {
+    border: 2px solid black;
+  }
+  &__achievements-item label:active:before {
+    border: 2px solid #d22856;
+  }
+  &__achievements-item input:checked + label:before {
+    background-image: url(../img/icon-yes-pink.svg);
+    background-repeat: no-repeat;
+    background-size: 26px 38px;
+    background-position: center;
+  }
+  &__user-contacts {
+    width: 280px;
+    margin: 0 auto;
+    border: none;
+    padding-top: 30px;
+  }
+  &__user-contacts-title {
+    display: none;
+  }
+  &__user-contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__user-contacts-item label {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d22856;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  &__user-contacts-item input {
+    width: 258px;
+    height: 59px;
+    padding-left: 18px;text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 25px;
+  }
+  &__user-contacts-item input:hover {
+    border: 2px solid black;
+  }
+  &__user-contacts-item input:active {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+  &__user-contacts-item input:focus {
+    outline: none;
+  }
+  &__user-contacts-item input::-webkit-input-placeholder {
+    color: #283645;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__app {
+    width: 100%;
+    height: 310px;
+    background-color: #f2f2f2;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__app-wrap {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+  &__app-title {
+    width: 180px;
+    color: #d22856;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 45px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    text-transform: uppercase
+  }
+  &__app-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__app-item {
+    margin-bottom: 41px;
+  }
+  &__app-item input {
+    display: none;
+  }
+  &__app-item label {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    position: relative;
+    cursor: pointer;
+    padding-left: 50px;
+  }
+  &__app-item label:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+  &__app-item label:hover:before {
+    border: 2px solid #283645;
+  }
+  &__app-item label:active:before {
+    border: 2px solid #283645;
+    opacity: 0.3;
+  }
+  &__app-item input:checked + label:before {
+    background-image: url(../img/icon-pink-point.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__emotion {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border: none;
+    padding-top: 20px;
+  }
+  &__emotion-title {
+    font-size: 14px;
+    line-height: 26px;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  &__comment {
+    width: 263px;
+    height: 178px;
+    padding-left: 17px;
+    padding-top: 15px;
+    border: 2px solid #e5e5e5;
+  }
+  &__comment:hover {
+    border: 2px solid #283645;
+  }
+  &__comment:active {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+  &__comment:focus {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+  &__comment::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
+  &__submit-wrap {
+    width: 280px;
+    height: 115px;
+    padding: 0 20px;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+  &__submit-btn {
+    width: 280px;
+    height: 63px;
+    background-color: #2aab6d;
+    border: none;
+    border-radius: 2%;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  &__required {
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    text-transform: uppercase;
+    margin-left: 48px;
+    margin-top: 30px;
+  }
+  &__required b {
+    display: none;
+  }
+  &__required span {
+    color: #d22856;
+  }
+}
+
+@media (max-width: @mobile-widths-only) {
+  .form {
+    &__description--mobile {
+      display: none;
+    }
+    &__achievements-title {
+      width: 223px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #d22856;
+      text-align: center;
+      margin-left: 25px;
+      margin-bottom: 50px;
+      margin-top: 40px;
+      text-transform: uppercase;
+    }
+    &__achievements {
+      padding-bottom: 15px;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .form-title {
+    height: 240px;
+    width: 100%;
+    padding-top: 180px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    &__text {
+      width: 490px;
+      font-size: 50px;
+      line-height: 52px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    &__description {
+      width: 494px;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 52px;
+    }
+    &__full-name {
+      width: 620px;
+      padding-bottom: 35px;
+    }
+    &__full-name-list label {
+      display: inline-block;
+      margin: 0;
+      margin-right: 15px;
+    }
+    &__full-name-list input {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+    &__full-name-list &__full-name-item:nth-child(2) input {
+      width: 86.5%;
+    }
+    &__achievements {
+      background-color: white;
+      height: 610px;
+      border: none;
+    }
+    &__achievemets-wrap {
+      width: 576px;
+      padding: 0 20px;
+      padding-top: 20px;
+      margin: 0 auto;
+      border: 2px solid #e5e5e5;
+    }
+    &__achievements-title {
+      width: 486px;
+      position: relative;
+      color: #d22856;
+      top: -33px;
+      left: 45px;
+      background-color: white;
+      text-align: center;
+    }
+    &__achievements-item label {
+      margin-left: 90px;
+      margin-bottom: 52px;
+    }
+    &__user-contacts {
+      width: 596px;
+      margin: 0 auto;
+      border: 2px solid #e5e5e5;
+      padding-top: 0;
+    }
+    &__user-contacts-title {
+      display: block;
+      width: 286px;
+      position: relative;
+      color: #d22856;
+      top: -28px;
+      left: 160px;
+      background-color: white;
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+    &__user-contacts-item input {
+      width: 476px;
+      margin-left: 55px;
+    }
+    &__user-contacts-item {
+      position: relative;
+      margin-top: -14px;
+      margin-bottom: 60px;
+    }
+    &__user-contacts-item:after {
+      content: "";
+      position: absolute;
+      height: 61px;
+      width: 58px;
+      right: 45px;
+      top: 2px;
+      background-color: #e5e5e5;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__user-contacts-list &__user-contacts-item:first-child:after {
+      background-image: url(../img/icon-phone.svg);
+    }
+    &__user-contacts-list &__user-contacts-item:last-child:after {
+      background-image: url(../img/icon-mail.svg);
+    }
+    &__user-contacts-list &__user-contacts-item:last-child {
+      margin-bottom: 25px;
+    }
+    &__user-contacts-item label {
+      position: absolute;
+      top: 72px;
+      left: 55px;
+    }
+    &__app {
+      width: 100%;
+      height: 320px;
+      position: relative;
+      background-color: white;
+      border: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 20px;
+    }
+    &__app-wrap {
+      width: 576px;
+      margin: 0 auto;
+      border: 2px solid #e5e5e5;
+      position: relative;
+    }
+    &__app-title {
+      width: 350px;
+      margin: 0;
+      position: absolute;
+      top: -10px;
+      left: 145px;
+      background-color: white;
+      text-transform: uppercase;
+    }
+    &__app-list {
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+    &__emotion {
+      width: 500px;
+      height: 289px;
+      padding-left: 52px;
+      padding-right: 64px;
+      border: 2px solid #e5e5e5;
+      position: relative;
+    }
+    &__emotion-title {
+      width: 260px;
+      position: relative;
+      top: -34px;
+      left: 133px;
+      background-color: white;
+    }
+    &__comment {
+      width: 100%;
+      height: 189px;
+      margin: 0;
+    }
+    &__submit-wrap {
+      width: 620px;
+      padding: 0 20px;
+      padding-top: 60px;
+      padding-bottom: -100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__submit-btn {
+      width: 300px;
+    }
+    &__required {
+      margin-left: 45px;
+      margin-top: 20px;
+    }
+    & &__fieldset:nth-child(1) {
+      order: -2;
+      padding-bottom: 0;
+    }
+    & &__fieldset:nth-child(2) {
+      order: 1;
+    }
+    & &__fieldset:nth-child(3) {
+      order: 0;
+      margin-bottom: 65px;
+    }
+    & &__fieldset:nth-child(4) {
+      order: -1;
+      margin-bottom: 43px;
+    }
+    & &__fieldset:nth-child(5) {
+      order: 2;
+    }
+    & &__fieldset:nth-child(6) {
+      order: 3;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .form-title {
+    height: 210px;
+    width: 100%;
+    padding-top: 184px;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    &__text {
+      width: 750px;
+    }
+  }
+
+  .form {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    &__description {
+      width: 761px;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 52px;
+      margin-bottom: 80px;
+    }
+    &__full-name {
+      width: 470px;
+      position: relative;
+      margin: 0;
+    }
+    &__full-name-list input {
+      width: 67%;
+    }
+    &__full-name-list &__full-name-item:nth-child(2) input {
+      width: 75.5%;
+    }
+    &__achievements {
+      height: 317px;
+      margin-top: 37px;
+    }
+    &__achievemets-wrap {
+      width: 896px;
+      height: 228px;
+    }
+    &__achievements-title {
+      width: 470px;
+      top: -33px;
+      left: 204px;
+    }
+    &__achievements-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-top: 24px;
+    }
+    &__achievements-item {
+      width: 260px;
+    }
+    &__user-contacts-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__user-contacts-title {
+      top: -28px;
+      left: 285px;
+      text-transform: uppercase;
+    }
+    &__user-contacts-item {
+      margin-bottom: 35px;
+    }
+    &__user-contacts-item:after {
+      right: 2px;
+      top: 2px;
+    }
+    &__user-contacts-item input {
+      width: 372px;
+      margin-left: 0;
+    }
+    &__achievements-item label {
+      margin-left: 60px;
+    }
+    &__user-contacts {
+      width: 856px;
+      padding: 0 40px;
+      margin-top: 26px;
+    }
+    &__user-contacts-item label {
+      position: absolute;
+      top: 75px;
+      left: 2px;
+    }
+    &__app {
+      width: auto;
+      height: 300px;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+      margin: 0;
+    }
+    &__app-wrap {
+      width: 391px;
+      margin: 0 auto;
+      padding-bottom: 5px;
+      border: 2px solid #e5e5e5;
+      margin: 0;
+    }
+    &__app-title {
+      top: -10px;
+      left: 44px;
+    }
+    &__emotion {
+      width: 820px;
+      padding-left: 56;
+      padding-right: 64;
+    }
+    &__emotion-title {
+      top: -28px;
+      left: 275px;
+    }
+    & &__fieldset:nth-child(3) {
+      order: 0;
+      margin-bottom: 37px;
+    }
+    &__submit-wrap {
+      width: 940px;
+      padding: 0 10px;
+      margin: 0 auto;
+      margin-top: 65px;
+    }
+    &__required b {
+      display: inline;
+      font-weight: normal;
+    }
+  }
+}

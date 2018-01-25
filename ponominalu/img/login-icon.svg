@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-1554" y="-22" width="1600" height="1635" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="rgb(155,154,155)" stroke="none" transform="translate(0.00488281 9)" d="M11.4951 0C13.4951 1 13.4951 1 15.4951 2.01128C15.8359 2.18359 15.9916 2.5 15.9916 3L15.9916 6.02248C15.9916 6.5 15.5252 7 14.9933 7L0.995106 7C0.422728 7 0 6.5 0 6L0 3C0.0164965 2.67811 0.170323 2.1755 0.495106 2.01128C2.49511 1 2.49511 1 4.49511 0C5.36892 0.512749 6.92203 1 7.9968 1C8.98009 1 10.6753 0.43434 11.4951 0ZM1.49511 5.5L14.4951 5.5L14.4951 3L11.4951 1.5C9.99905 2.11504 8.99511 2.5 7.99511 2.5C6.99511 2.5 5.99653 2.18994 4.49511 1.5L1.49511 3L1.49511 5.5Z" fill-rule="evenodd"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect x="-1554" y="-22" width="1600" height="1635" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<path fill="rgb(155,154,155)" stroke="none" transform="translate(4 0)" d="M4 8C1.791 8 0 6.209 0 4C0 1.791 1.791 0 4 0C6.209 0 8 1.791 8 4C8 6.209 6.209 8 4 8ZM6.5 4C6.5 2.62125 5.37875 1.5 4 1.5C2.62125 1.5 1.5 2.62125 1.5 4C1.5 5.37875 2.62125 6.5 4 6.5C5.37875 6.5 6.5 5.37875 6.5 4Z" fill-rule="evenodd"/>
+	</g>
+</svg>

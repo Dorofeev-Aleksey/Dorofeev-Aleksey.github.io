@@ -1,0 +1,72 @@
+.best-tracks {
+  width: 350px;
+  &__title {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5f5f5f;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__item:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  &__item:active{
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  &__track-number {
+    margin-right: -135px;
+  }
+  &__track-name {
+    width: 160px;
+    text-align: left;
+  }
+  &__all-tracks {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5f5f5f;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__all-tracks:hover {
+    opacity: 0.6;
+  }
+  &__all-tracks:hover:before {
+    opacity: 0.6;
+  }
+  &__all-tracks:active {
+    opacity: 0.3;
+  }
+  &__all-tracks:active:before {
+    opacity: 0.3;
+  }
+  &__all-tracks:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -12px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #2b2b2b;
+    border-bottom: 2px solid #2b2b2b;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    transform: rotate(-45deg);
+    border-radius: 25%;
+  }
+}

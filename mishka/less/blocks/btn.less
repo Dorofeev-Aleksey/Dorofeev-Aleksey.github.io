@@ -1,0 +1,118 @@
+.btn {
+  border: 2px solid @grey;
+  font-size: 18px;
+  line-height: 20px;
+  color: @grey;
+  font-family: @opensans;
+  font-weight: bold;
+  padding: 13px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: @grey;
+    color: white;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &--product-week {
+    width: 100%;
+    font-size: 17px;
+    padding-right: 83px;
+    padding-left: 83px;
+  }
+  &--reviews {
+    width: 100%;
+    font-size: 17px;
+    padding-right: 81px;
+    padding-left: 81px;
+  }
+  &--contants {
+    display: block;
+    width: 160px;
+    margin: 20px auto;
+    padding: 14px 48px;
+    margin-bottom: 0;
+  }
+  &--production-order {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 34px;
+  }
+  &--form {
+    font-size: 17px;
+    line-height: 17px;
+    background-color: white;
+    width: 260px;
+    padding: 15.5px 40px;
+    margin-bottom: 55px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: @tablet-widths) {
+  .btn {
+    &--product-week {
+      padding-right: 99px;
+      padding-left: 99px;
+    }
+    &--reviews {
+      width: 95px;
+      position: absolute;
+      right: 50px;
+      top: 80px;
+      padding: 14px 38px;
+    }
+    &--production-order {
+      width: 150px;
+      padding: 15.5px 215px;
+      margin-left: 41px;
+      font-size: 17px;
+      line-height: 17px;
+    }
+    &--form {
+      width: 230px;
+      margin-top: 48px;
+      padding: 15.5px 0;
+      margin-bottom: 50px;
+    }
+    &--contants {
+      padding: 14px 33px;
+      margin-bottom: 24px;
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .btn {
+    &--product-week {
+      padding-right: 99px;
+      padding-left: 99px;
+    }
+    &--reviews {
+      padding-right: 38px;
+      padding-left: 38px;
+      position: absolute;
+      right: 0;
+      top: 79px;
+    }
+    &--contants {
+      display: block;
+      width: 150px;
+      margin: 0;
+      margin-left: 5px;
+      padding-right: 38px;
+      padding-left: 38px;
+    }
+    &--form {
+      margin-left: 176px;
+      margin-top: 44px;
+    }
+    &--production-order {
+      width: 148px;
+      padding-right: 39px;
+      padding-left: 39px;
+      margin-left: 81px;
+    }
+  }
+}

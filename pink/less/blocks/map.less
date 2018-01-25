@@ -1,0 +1,34 @@
+.map {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 11vw;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 0;
+  }
+  & iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .map {
+    height: 375px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .map {
+    height: 508px;
+  }
+}

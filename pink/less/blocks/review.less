@@ -1,0 +1,215 @@
+.review {
+  width: 280px;
+  height: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  &__visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 30px;
+  }
+  &__item {
+    display: none;
+  }
+  &__item--active {
+    display: block;
+  }
+  &__user {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__user-description {
+    display: none;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__toggles {
+    height: 20px;
+    width: 75px;
+    margin: 0 auto;
+    padding-left: 5px;
+  }
+  &__toggle {
+    min-width: 13px;
+    height: 13px;
+    font-size: 0;
+    background-color: #bec2c7;
+    border: none;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__toggle:hover {
+    background-color: #7e868f;
+  }
+  &__toggle:active {
+    opacity: 0.3;
+  }
+  &__toggle--active {
+    height: 15px;
+    background-color: white;
+    border: 2px solid #384553;
+  }
+  &__toggle--active:hover {
+    background-color: white;
+  }
+  &__toggle--active:active {
+    background-color: white;
+    border: 2px solid #283645;
+  }
+  &__arrows {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .review {
+    width: 620px;
+    height: 300px;
+  &__user-description {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__item {
+    display: none;
+  }
+  &__item--active {
+    display: flex;
+    flex-direction: column;
+  }
+  &__user {
+    order: 2;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &__user-description {
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    order: 1;
+    margin-top: 25px;
+  }
+ }
+}
+
+@media (min-width: @desktop-widths) {
+  .review {
+    width: 940px;
+    height: 320px; //412
+    padding: 0 100px;
+    padding-top: 102px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 64px;
+      top: 40px;
+      left: 530px;
+      background-image: url(../img/icon-quotes.svg);
+      background-repeat: no-repeat;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 64px;
+      top: 40px;
+      left: 570px;
+      background-image: url(../img/icon-quotes.svg);
+      background-repeat: no-repeat;
+    }
+    &__user {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__user-description {
+      font-size: 18px;
+    }
+    &__text {
+      width: 680px;
+      margin-left: 125px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &__arrows {
+      width: 620px;
+      height: 50px;
+      display: block;
+      position: absolute;
+      top: 175px;
+    }
+    &__arrow-left {
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      width: 30px;
+      height: 30px;
+      font-size: 0;
+      border: 2px solid #283645;
+      opacity: 0.5;
+      border-bottom: transparent;
+      border-right: transparent;
+      background-color: transparent;
+      transform: rotate(-45deg);
+      cursor: pointer;
+    }
+    &__arrow-left:hover {
+      opacity: 1;
+    }
+    &__arrow-left:active {
+      opacity: 0.3;
+      outline: 0;
+    }
+    &__arrow-left:focus {
+      outline: 0;
+    }
+    &__arrow-right {
+      position: absolute;
+      top: 5px;
+      left: 875px;
+      width: 30px;
+      height: 30px;
+      font-size: 0;
+      border: 2px solid #283645;
+      opacity: 0.5;
+      border-bottom: transparent;
+      border-right: transparent;
+      background-color: transparent;
+      transform: rotate(135deg);
+      cursor: pointer;
+    }
+    &__arrow-right:hover {
+      opacity: 1;
+    }
+    &__arrow-right:active {
+      opacity: 0.3;
+      outline: 0;
+    }
+    &__arrow-right:focus {
+      outline: 0;
+    }
+  }
+}

@@ -1,0 +1,214 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 860px;
+  &__title {
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 65px;
+  }
+  &__email-box {
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  &__email-subtitle {
+    font-size: 15px;
+    line-height: 30px;
+    color: @grey;
+    font-weight: normal;
+    margin-right: 27px;
+  }
+  &__email {
+    font-size: 15px;
+    line-height: 30px;
+    color: @grey;
+    font-weight: normal;
+    border-bottom: 1px solid #62d1ba;
+    text-decoration: none;
+  }
+  &__email:hover {
+    color: #46c1ae;
+  }
+  &__email:active {
+    opacity: 0.3;
+  }
+  &__address-box {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+  }
+  &__address-subtitle {
+    font-size: 15px;
+    line-height: 30px;
+    color: @grey;
+    font-weight: normal;
+    margin-right: 32px;
+  }
+  &__address {
+    width: 144px;
+    font-size: 15px;
+    line-height: 30px;
+    color: @grey;
+    font-weight: normal;
+  }
+  &__br {
+    display: none;
+  }
+  &__js-open-map {
+    width: 320px;
+    height: 457px;
+    margin: 0 auto;
+    background-image: url(../img/map-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    border: none;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .contacts {
+    width: 768px;
+    min-height: 860px;
+    padding-top: 10px;
+    position: relative;
+    &__title {
+      position: relative;
+      font-size: 43px;
+      line-height: 50px;
+      color: black;
+      font-weight: bold;
+      margin-left: 50px;
+      margin-top: 20px;
+      margin-bottom: 48px;
+    }
+    &__title::after {
+      content: "";
+      position: absolute;
+      top: -18px;
+      right: 50px;
+      height: 85px;
+      width: 50px;
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &__email-box {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 0;
+      margin-right: 16px;
+      margin-left: 50px;
+    }
+    &__email-subtitle {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 17px;
+      margin-right: 20px;
+    }
+    &__email {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 17px;
+    }
+    &__address-box {
+      width: 320px;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 40px;
+    }
+    &__address-subtitle {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 17px;
+      margin-right: 22px;
+    }
+    &__address{
+      display: inline-block;
+      vertical-align: top;
+      width: 225px;
+      font-size: 17px;
+    }
+    &__br {
+      display: block;
+    }
+    &__js-open-map {
+      width: 768px;
+      height: 457px;
+      margin: 0 auto;
+      margin-top: 15px;
+      margin-bottom: 35px;
+      background-image: url(../img/map-tablet.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .contacts {
+    width: 1050px;
+    min-height: 594px;
+    width: 875px;
+    padding-left: 165px;
+    &__title {
+      margin-top: 102px;
+      font-size: 53px;
+      line-height: 57px;
+      color: black;
+      font-weight: bold;
+      margin-left: 0;
+      position: relative;
+    }
+    &__title::after {
+      display: none;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 103px;
+      left: 58px;
+      height: 85px;
+      width: 50px;
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &__email-box {
+      display: block;
+      margin-left: 5px;
+      margin-bottom: 30px;
+    }
+    &__address-box {
+      width: 325px;
+      display: block;
+      margin-left: 4px;
+      margin-bottom: 80px;
+    }
+    &__address {
+      width: 225px;
+    }
+    &__br {
+      display: block;
+    }
+    &__title::after {
+      top: 70px;
+      left: 60px;
+    }
+    &__js-open-map {
+      position: absolute;
+      width: 525px;
+      height: 457px;
+      right: -5px;
+      top: 27px;
+      background-image: url(../img/map-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

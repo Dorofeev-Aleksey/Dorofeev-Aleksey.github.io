@@ -1,0 +1,237 @@
+.page-footer {
+  &__container {
+    width: 280px;
+    height: 265px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__logo-svg {
+    padding-top: 34px;
+    cursor: pointer;
+  }
+  &__logo-svg:hover &__logo-use {
+    color: #D22856;
+  }
+  &__logo-svg:active &__logo-use {
+    color: black;
+    opacity: 0.3;
+  }
+  &__logo-use--desktop {
+    display: none;
+  }
+  &__logo-use {
+    width: 150px;
+    height: 46px;
+  }
+  &__social {
+    width: 184px;
+    display: flex;
+  }
+  &__btn {
+    width: 45px;
+    height: 45px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 50%;
+    font-size: 0;
+    margin-right: 12px;
+    margin-top: 40px;
+  }
+  &__btn:hover {
+    border-color: #283645;
+  }
+  &__btn:active {
+    opacity: 0.3;
+  }
+  &__btn--tw {
+    background-image: url(../img/icon-twitter.svg);
+    background-repeat: no-repeat;
+    background-position: 13px 15px;
+  }
+  &__btn--fb {
+    background-image: url(../img/icon-facebook.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 13px;
+  }
+  &__btn--youtube {
+    background-image: url(../img/icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+  }
+  &__developed {
+    width: 140px;
+    position: relative;
+  }
+  &__developed-text {
+    color: #283645;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 54px;
+  }
+  &__developed-link {
+    height: 36px;
+    width: 28px;
+    font-size: 0;
+    position: absolute;
+    right: -5px;
+    top: 47px;
+    background-image: url(../img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
+  }
+  &__developed-link:hover {
+    background-image: url(../img/logo-htmlacademy-hover.svg);
+  }
+  &__developed-link:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: @mobile-widths-only) {
+  .page-footer {
+    &--hidden {
+      display: none;
+    }
+    &__logo {
+      margin-left: 60px;
+    }
+    &__social {
+      margin-left: 50px;
+      margin-top: -12px;
+    }
+    &__developed-link {
+      right: -68px;
+      top: -8px;
+    }
+    &__developed-text {
+      margin-left: 65px;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .page-footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      width: 620px;
+      height: 125px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    &__logo-svg {
+      padding-top: 34px;
+      cursor: pointer;
+    }
+    &__logo-svg:hover &__logo-use {
+      color: #D22856;
+    }
+    &__logo-svg:active &__logo-use {
+      color: black;
+      opacity: 0.3;
+    }
+    &__logo-use--desktop {
+      display: none;
+    }
+    &__logo-use {
+      width: 150px;
+      height: 46px;
+    }
+    &__social {
+      width: 184px;
+      display: flex;
+    }
+    &__btn {
+      width: 45px;
+      height: 45px;
+      border: 3px solid rgba(40, 54, 69, 0.1);
+      border-radius: 50%;
+      font-size: 0;
+      margin-right: 12px;
+      margin-top: 40px;
+    }
+    &__btn:hover {
+      border-color: #283645;
+    }
+    &__btn:active {
+      opacity: 0.3;
+    }
+    &__btn--tw {
+      background-image: url(../img/icon-twitter.svg);
+      background-repeat: no-repeat;
+      background-position: 13px 15px;
+    }
+    &__btn--fb {
+      background-image: url(../img/icon-facebook.svg);
+      background-repeat: no-repeat;
+      background-position: 16px 13px;
+    }
+    &__btn--youtube {
+      background-image: url(../img/icon-youtube.svg);
+      background-repeat: no-repeat;
+      background-position: 16px 16px;
+    }
+    &__developed {
+      width: 140px;
+      position: relative;
+    }
+    &__developed-text {
+      color: #283645;
+      font-size: 16px;
+      line-height: 18px;
+      margin-top: 54px;
+    }
+    &__developed-link {
+      height: 36px;
+      width: 28px;
+      font-size: 0;
+      position: absolute;
+      right: -5px;
+      top: 47px;
+      background-image: url(../img/logo-htmlacademy.svg);
+      background-repeat: no-repeat;
+    }
+    &__developed-link:hover {
+      background-image: url(../img/logo-htmlacademy-hover.svg);
+    }
+    &__developed-link:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .page-footer {
+    &__container {
+      height: 150px;
+      width: 940px;
+      padding: 0 10px;
+    }
+    &__logo-svg {
+      padding-top: 47px;
+    }
+    &__logo-use--tablet {
+      display: none;
+    }
+    &__logo-use--desktop {
+      display: block;
+    }
+    &__social {
+      width: 184px;
+    }
+    &__btn {
+      margin-top: 53px;
+    }
+    &__developed {
+      width: 155px;
+    }
+    &__developed-text {
+      font-size: 19px;
+      line-height: 20px;
+      margin-top: 65px;
+    }
+    &__developed-link {
+      right: -5px;
+      top: 59px;
+    }
+  }
+}
