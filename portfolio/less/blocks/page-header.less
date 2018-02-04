@@ -1,0 +1,76 @@
+.page-header {
+  border-bottom: 1px solid #e6e6e6;
+  &__container {
+    display: flex;
+    width: 300px;
+    height: 77px;
+    padding: 0 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 45px;
+  }
+  &__item {
+    list-style-type: none;
+  }
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    margin-right: 15px;
+  }
+  &__link:hover {
+    opacity: 0.6;
+  }
+  &__link:active {
+    opacity: 0.3;
+  }
+  &__link--vkontakte {
+    background-image: url(../img/vk-logo.png);
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+    background-size: contain;
+  }
+  &__link--github {
+    background-image: url(../img/github.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  &__link--skype {
+    background-image: url(../img/skype-black-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .page-header {
+    &__container {
+      width: 590px;
+      padding: 0 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .page-header {
+    &__container {
+      width: 940px;
+      padding: 0 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}

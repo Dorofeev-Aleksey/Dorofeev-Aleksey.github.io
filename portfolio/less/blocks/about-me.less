@@ -1,0 +1,93 @@
+.about-me {
+  background-color: white;
+  padding-bottom: 20px;
+  &__container {
+    width: 300px;
+    padding: 10px 10px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  &__box {
+    border-bottom: 2px solid #f2f2f2;
+  }
+  &__text {
+    line-height: 19px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+  }
+  &__box-image {
+    height: 250px;
+    padding-bottom: 10px;
+    background: url(../img/html5.svg) 0 17% no-repeat,
+                url(../img/css3.svg) 50% 17% no-repeat,
+                url(../img/grunt.png) 98% 22% no-repeat,
+                url(../img/less.png) 0 92% no-repeat,
+                url(../img/bootstrap.svg) 50% 92% no-repeat,
+                url(../img/owlCarousel.svg) 98% 97% no-repeat;
+    background-size: 80px, 80px, 80px, 80px, 80px, 80px;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .about-me {
+    background-color: white;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      width: 680px;
+      padding: 0 0px;
+      padding-top: 43px;
+      padding-bottom: 23px;
+    }
+    &__box {
+      width: 420px;
+      padding-right: 15px;
+      border-bottom: none;
+      border-right: 3px solid #f2f2f2;
+    }
+    &__box-image {
+      width: 260px;
+      height: 385px;
+      background: url(../img/html5.svg) 20% 5% no-repeat,
+                  url(../img/css3.svg) 85% 5% no-repeat,
+                  url(../img/grunt.png) 20% 53% no-repeat,
+                  url(../img/less.png) 85% 53% no-repeat,
+                  url(../img/bootstrap.svg) 20% 92% no-repeat,
+                  url(../img/owlCarousel.svg) 85% 95% no-repeat;
+      background-size: 80px, 80px, 80px, 80px, 80px, 80px;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .about-me {
+    &__container {
+      width: 960px;
+      padding: 7px 10px;
+      padding-top: 53px;
+      padding-bottom: 33px;
+    }
+    &__box {
+      width: 605px;
+      padding-right: 40px;
+    }
+    &__text {
+      font-size: 21px;
+      line-height: 23px;
+      font-weight: 300;
+    }
+    &__box-image {
+      width: 355px;
+      height: 400px;
+      background: url(../img/html5.svg) 18% 5% no-repeat,
+                  url(../img/css3.svg) 75% 5% no-repeat,
+                  url(../img/grunt.png) 18% 58% no-repeat,
+                  url(../img/less.png) 75% 58% no-repeat,
+                  url(../img/bootstrap.svg) 18% 97% no-repeat,
+                  url(../img/owlCarousel.svg) 75% 100% no-repeat;
+      background-size: 95px, 95px, 95px, 95px, 95px, 95px;
+    }
+  }
+}

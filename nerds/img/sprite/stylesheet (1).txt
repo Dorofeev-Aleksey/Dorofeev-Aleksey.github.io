@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox-off-png-copy {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -30px;
+}
+
+.sprite-checkbox-on-png-copy {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -63px;
+}
+
+.sprite-fb-icon-png-copy {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -96px;
+}
+
+.sprite-insta-icon-png-copy {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -128px;
+}
+
+.sprite-radio-off-png-copy {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -159px;
+}
+
+.sprite-radio-on-png-copy {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -194px;
+}
+
+.sprite-vk-icon-png-copy {
+    width: 26px;
+    height: 15px;
+    background-position: -5px -229px;
+}

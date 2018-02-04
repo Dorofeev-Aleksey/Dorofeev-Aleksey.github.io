@@ -190,14 +190,26 @@ body {
   padding: 0;
   overflow: hidden;
 }
+.page-header {
+  width: 100%;
+  background-color: black;
+}
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1290px;
+  height: 77px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
 .page-header__logo {
   width: 324px;
   height: 58px;
   margin-left: 20px;
-}
-.page-header__container {
-  width: 100%;
-  padding: 0 0;
 }
 .page-header__main-nav {
   width: 426px;

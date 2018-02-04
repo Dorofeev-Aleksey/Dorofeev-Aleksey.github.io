@@ -7,6 +7,12 @@
   &__logo {
     text-align: center;
   }
+  &__logo:hover {
+    opacity: 0.6;
+  }
+  &__logo:active {
+    opacity: 0.6;
+  }
   &__toggler {
     position: absolute;
     top: 22px;
@@ -145,6 +151,10 @@
     width: 668px;
     display: flex;
     justify-content: space-between;
+    &__logo {
+      padding-top: 20px;
+      text-align: center;
+    }
     &__main-nav {
       display: none;
     }
@@ -231,8 +241,9 @@
     width: 1050px;
     z-index: 200;
     &__logo {
+      padding-top: 0px;
       margin-left: 445px;
-      margin-top: 20px;
+      margin-top: 8px;
     }
     &__main-nav {
       display: none;
@@ -293,4 +304,3 @@
     }
   }
 }
-

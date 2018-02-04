@@ -7,19 +7,23 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазина Мишка">
-      </div>
+      <a href="#" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Магазин «Мишка»">
+        </picture>
+      </a>
       <div class="page-header__main-nav page-header__main-nav--nojs page-header__main-nav--closed">
         <button class="page-header__toggler" type="button">Открыть меню</button>
       </div>
       <nav class="page-header__popup-menu">
         <ul class="page-header__popup-list">
           <li class="page-header__popup-item page-header__popup-item-wrest1">
-            <a class="page-header__popup-link" href="#">Каталог товаров</a>
+            <a class="page-header__popup-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="page-header__popup-item page-header__popup-item-wrest2">
-            <a class="page-header__popup-link" href="#">Вязание на заказ</a>
+            <a class="page-header__popup-link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="page-header__popup-item">
             <a class="page-header__popup-link" href="#">Поиск по сайту</a>

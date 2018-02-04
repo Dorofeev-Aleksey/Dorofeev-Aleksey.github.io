@@ -1,0 +1,163 @@
+.main {
+  border-bottom: 2px solid #f2f2f2;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  &__title {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__title span {
+    font-size: 21px;
+    font-weight: lighter;
+    border-top: 1px solid #e6e6e6;
+  }
+  &__list-projects {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    width: 300px;
+    height: 235px;
+    list-style-type: none;
+    margin-bottom: 70px;
+    background-position: 0 0;
+    background-size: contain;
+    cursor: pointer;
+  }
+  &__item:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__item:active {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__item:hover &__item-title {
+    opacity: 0.8;
+  }
+  &__item:active &__item-title {
+    opacity: 0.6;
+  }
+  &__item:hover &__link-site {
+    display: block;
+  }
+  &__item--pink {
+    background-image: url(../img/screen-pink.png);
+  }
+  &__item--technomart {
+    background-image: url(../img/screen-technomart.png);
+  }
+  &__item--codemagic {
+    background-image: url(../img/screen-codemagic.png);
+  }
+  &__item--kekstagram {
+    background-image: url(../img/screen-kekstagram.png);
+  }
+  &__item--mishka {
+    background-image: url(../img/screen-mishka.png);
+  }
+  &__item--ponominalu {
+    background-image: url(../img/screen-ponominalu.png);
+  }
+  &__item--nerds {
+    background-image: url(../img/screen-nerds.png);
+  }
+  &__item-title {
+    position: relative;
+    bottom: -245px;
+    text-align: center;
+  }
+  &__item-text {
+    display: none;
+    text-align: center;
+  }
+  &__link-site {
+    display: none;
+    width: 165px;
+    height: 35px;
+    padding-top: 15px;
+    margin: 0 auto;
+    margin-top: 145px;
+    color: white;
+    border-radius: 5px;
+    background-color: #1161ab;
+    text-decoration: none;
+    text-align: center;
+  }
+  &__link-site:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+  }
+  &__link-site:active {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .main {
+    &__container {
+      width: 680px;
+      padding: 0 0px;
+      padding-top: 37px;
+      padding-bottom: 7px;
+    }
+    &__title {
+      margin-bottom: 53px;
+    }
+    &__list-projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item:nth-child(2n+1) {
+      margin-right: 20px;
+    }
+    &__item {
+      width: 330px;
+      height: 260px;
+    }
+    &__item-title {
+      position: relative;
+      font-size: 26px;
+      bottom: -245px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .main {
+    &__container {
+      width: 960px;
+      padding: 0 10px;
+      padding-top: 43px;
+      padding-bottom: 7px;
+    }
+    &__title {
+      margin-bottom: 55px;
+    }
+    &__list-projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+    &__item {
+      width: 465px;
+      height: 367px;
+    }
+    &__item-title {
+      font-size: 28px;
+      bottom: -352px;
+    }
+    &__link-site {
+      width: 205px;
+      margin-top: 245px
+    }
+  }
+}
