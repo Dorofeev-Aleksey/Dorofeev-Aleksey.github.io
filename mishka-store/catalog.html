@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог магазина Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Магазин «Мишка»">
+        </picture>
+      </a>
+      <div class="page-header__main-nav page-header__main-nav--nojs page-header__main-nav--closed">
+        <button class="page-header__toggler" type="button">Открыть меню</button>
+      </div>
+      <nav class="page-header__popup-menu">
+        <ul class="page-header__popup-list">
+          <li class="page-header__popup-item page-header__popup-item-wrest1">
+            <a class="page-header__popup-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="page-header__popup-item page-header__popup-item-wrest2">
+            <a class="page-header__popup-link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="page-header__popup-item">
+            <a class="page-header__popup-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-header__popup-item">
+            <a class="page-header__popup-link" href="#">Корзина: <span class="page-header__popup-basket">пока пуста</span></a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="page-header__delivery">Бесплатная доставка по России</a>
+      <a href="#" class="page-header__news">Новые поступления</a>
+      <a href="#" class="page-header__sale">Распродажа</a>
+    </header>
+    <div class="page-catalog">
+      <h1 class="page-catalog__title">Каталог товаров</h1>
+      <div class="page-catalog__wrapper-center">
+        <article class="page-catalog__card">
+          <div class="page-catalog__photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+            </picture>
+          </div>
+          <div class="page-catalog__wrapper-info">
+            <span class="page-catalog__name">Зайчик-попрыгайчик</span>
+            <p class="page-catalog__description">Рост 30 см, вес 200 г</p>
+            <a class="page-catalog__order" href="#">1 200 руб.</a>
+          </div>
+        </article>
+        <article class="page-catalog__card">
+          <div class="page-catalog__photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+            </picture>
+          </div>
+          <div class="page-catalog__wrapper-info">
+            <span class="page-catalog__name">Корзинка для белья</span>
+            <p class="page-catalog__description">Диаметр 15 см, высота 10 см</p>
+            <a class="page-catalog__order" href="#">690 руб.</a>
+          </div>
+        </article>
+        <article class="page-catalog__card">
+          <div class="page-catalog__photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Корзинка для белья">
+            </picture>
+          </div>
+          <div class="page-catalog__wrapper-info">
+            <span class="page-catalog__name">Большая корзинка для игрушек</span>
+            <p class="page-catalog__description">Диаметр 30 см, высота 30 см</p>
+            <a class="page-catalog__order" href="#">1 500 руб.</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="production">
+      <div class="production__wrapper-center">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video">
+          <button class="production__js-video-btn"></button>
+        </div>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="btn btn--production-order" href="#">Сделать заказ</a>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="page-footer__logo">
+          <img src="img/logo-footer.png" width="105" height="35" alt="Магазина Мишка">
+        </section>
+        <section class="page-footer__social">
+          <a class="page-footer__social-link page-footer__social-link--inst" href="#">Инстаграм</a>
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#">Фейсбук</a>
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#">Твиттер</a>
+        </section>
+        <section class="page-footer__copyright">
+          <span class="page-footer__subtitle">Разработано</span>
+          <a class="page-footer__logo-html" href="#">HTML academy</a>
+        </section>
+      </div>
+    </footer>
+    <form class="popup-order">
+      <h2 class="popup-order__title">Добавить в корзину</h2>
+      <span class="popup-order__subtitle">Выбирите размер:</span>
+      <div class="popup-order__size">
+        <ul class="popup-order_list">
+          <li class="popup-order__item">
+            <input type="radio" name="size" value="size-s" id="size-s" checked>
+            <label for="size-s">Размер S</label>
+          </li>
+          <li class="popup-order__item">
+            <input type="radio" name="size" value="size-m" id="size-m">
+            <label for="size-m">Размер M</label>
+          </li>
+          <li class="popup-order__item">
+            <input type="radio" name="size" value="size-l" id="size-l">
+            <label for="size-l">Размер L</label>
+          </li>
+        </ul>
+      </div>
+      <button class="popup-order__submit" type="submit">Отправить заказ</button>
+    </form>
+        <script type="text/javascript">
+      var MainNav = document.querySelector(".page-header__main-nav");
+      var Toggler = document.querySelector(".page-header__toggler");
+
+      MainNav.classList.remove("page-header__main-nav--nojs");
+
+      Toggler.addEventListener("click", function() {
+        if (MainNav.classList.contains("page-header__main-nav--opened")) {
+          MainNav.classList.remove("page-header__main-nav--opened");
+          MainNav.classList.add("page-header__main-nav--closed");
+        } else {
+          MainNav.classList.add("page-header__main-nav--opened");
+          MainNav.classList.remove("page-header__main-nav--closed");
+        }
+      })
+    </script>
+  </body>
+</html>
