@@ -1,0 +1,46 @@
+.online-shop {
+  width: 276px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 100px 0;
+  &__box--mobile {
+    display: none;
+  }
+  &__title {
+    margin-bottom: 9px;
+    font-size: 24px;
+    line-height: 25px;
+    color: black;
+    font-family: @apercu-pro-regular;
+    font-weight: normal;
+  }
+  &__mail {
+    font-size: 14px;
+    line-height: 15px;
+    color: black;
+    font-family: @Apercupro-mono;
+    text-decoration: none;
+  }
+  &__mail:hover {
+    opacity: 0.6;
+  }
+  &__mail:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .online-shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 590px;
+    height: 160px;
+    &__box--mobile {
+      display: block;
+    }
+    &__box:nth-child(2n+1) {
+      margin-right: 150px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.bake {
+  display: none;
+}
+
+@media (min-width: @desktop-widths) {
+  .bake {
+    display: flex;
+    width: 1040px;
+    height: 560px;
+    margin: 0 auto;
+    outline: 1px solid #f4e6d4;
+    &__info-box {
+      padding-left: 40px;
+    }
+    &__info-news {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 14px;
+      color: black;
+      font-family: @Apercupro-mono;
+    }
+    &__title {
+      margin-top: 25px;
+      font-size: 48px;
+      line-height: 50px;
+      color: black;
+      font-family: @apercu-pro-regular;
+    }
+    &__description {
+      width: 450px;
+      margin-bottom: 170px;
+      font-size: 18px;
+      line-height: 20px;
+      color: black;
+      font-family: @apercu-pro-regular;
+    }
+    &__details {
+      font-size: 12px;
+      line-height: 14px;
+      color: black;
+      font-family: @Apercupro-mono;
+    }
+    &__details:hover {
+      opacity: 0.6;
+    }
+    &__details:active {
+      opacity: 0.3;
+    }
+  }
+}

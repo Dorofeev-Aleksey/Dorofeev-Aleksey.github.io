@@ -1,0 +1,79 @@
+.page-header {
+  position: relative;
+  width: 276px;
+  height: 40px;
+  padding: 0 10px;
+  padding-top: 20px;
+  margin: 0 auto;
+  &__logo {
+    margin-top: 10px;
+  }
+  &__logo:hover {
+    opacity: 0.6;
+  }
+  &__logo:active {
+    opacity: 0.3;
+  }
+  &__toogler-box {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 25px;
+    height: 20px;
+    font-size: 0;
+  }
+  &__toggler {
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/menu-mobile.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__menu {
+    display: none;
+  }
+  &__menu-list {
+    margin: 0;
+    padding: 0;
+  }
+  &__menu-item {
+    list-style-type: none;
+  }
+  &__menu-item:hover {
+    text-decoration: underline;
+  }
+  &__menu-item:active {
+    opacity: 0.3;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 1040px;
+    height: 80px;
+    padding-top: 20px;
+    &__toogler-box {
+      display: none;
+    }
+    &__menu {
+      display: block;
+    }
+    &__menu-list {
+      display: flex;
+    }
+    &__menu-item {
+      padding: 20px 15px;
+    }
+    &__menu-link {
+      font-size: 18px;
+      color: black;
+      font-family: @apercu-pro-regular;
+      text-decoration: none;
+    }
+  }
+}

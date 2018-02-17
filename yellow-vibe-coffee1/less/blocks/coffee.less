@@ -1,0 +1,26 @@
+.coffee {
+  width: 276px;
+  height: 600px;
+  padding-top: 35px;
+  margin: 0 auto;
+  &__text {
+    font-size: 18px;
+    color: black;
+    font-family: @apercu-pro-regular;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .coffee {
+    width: 830px;
+    height: 960px;
+    padding-top: 85px;
+    &__text {
+      font-size: 24px;
+      color: black;
+      margin-left: 30px;
+      margin-bottom: 55px;
+    }
+  }
+}

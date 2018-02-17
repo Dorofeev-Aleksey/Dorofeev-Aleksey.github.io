@@ -1,0 +1,1071 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+@font-face {
+  font-family: "ApercuPro Bold";
+  src: url(../fonts/ApercuPro-Bold.otf);
+}
+@font-face {
+  font-family: "ApercuPro Mono";
+  src: url(../fonts/ApercuPro-Mono.otf);
+}
+@font-face {
+  font-family: "ApercuPro Regular";
+  src: url(../fonts/ApercuPro-Regular.otf);
+}
+@font-face {
+  font-family: "MinionPro Regular";
+  src: url(../fonts/MinionPro-Regular.otf);
+}
+@font-face {
+  font-family: "WebSymbolsLiga Regular";
+  src: url(../fonts/WebSymbolsLiga-Regular.otf);
+}
+body {
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+  position: relative;
+}
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.page-header {
+  position: relative;
+  width: 276px;
+  height: 40px;
+  padding: 0 10px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.page-header__logo {
+  margin-top: 10px;
+}
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+.page-header__logo:active {
+  opacity: 0.3;
+}
+.page-header__toogler-box {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 25px;
+  height: 20px;
+  font-size: 0;
+}
+.page-header__toggler {
+  width: 25px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/menu-mobile.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.page-header__menu {
+  display: none;
+}
+.page-header__menu-list {
+  margin: 0;
+  padding: 0;
+}
+.page-header__menu-item {
+  list-style-type: none;
+}
+.page-header__menu-item:hover {
+  text-decoration: underline;
+}
+.page-header__menu-item:active {
+  opacity: 0.3;
+  text-decoration: underline;
+}
+@media (min-width: 1040px) {
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1040px;
+    height: 80px;
+    padding-top: 20px;
+  }
+  .page-header__toogler-box {
+    display: none;
+  }
+  .page-header__menu {
+    display: block;
+  }
+  .page-header__menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page-header__menu-item {
+    padding: 20px 15px;
+  }
+  .page-header__menu-link {
+    font-size: 18px;
+    color: black;
+    font-family: "ApercuPro Regular", Arial, sans-serif;
+    text-decoration: none;
+  }
+}
+.description {
+  width: 276px;
+  height: 960px;
+  margin: 0 auto;
+}
+.description__title {
+  width: 210px;
+  font-size: 36px;
+  text-align: center;
+  margin-left: 40px;
+}
+.description__text {
+  font-size: 18px;
+  text-align: center;
+}
+.description__details {
+  color: black;
+  font-size: 12px;
+  margin-left: 108px;
+}
+.description__details:hover {
+  opacity: 0.6;
+}
+.description__details:active {
+  opacity: 0.3;
+}
+.description__showcase {
+  height: 430px;
+  width: 276px;
+  padding-top: 50px;
+}
+.description__item--mobile {
+  display: none;
+}
+.description__item {
+  height: 120px;
+  width: 276px;
+  padding-top: 360px;
+  outline: 1px solid #f4e6d4;
+  background-image: url(../img/coffee-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.description__item:hover {
+  cursor: pointer;
+  background-color: #f4e6d4;
+}
+.description__item:active {
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: #f4e6d4;
+}
+.description__store {
+  margin-left: 20px;
+  font-size: 12px;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+}
+.description__sort {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 19px;
+  margin-bottom: 0;
+}
+.description__name {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bold;
+}
+@media (min-width: 1040px) {
+  .description {
+    width: 1040px;
+    height: 940px;
+  }
+  .description__showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 1040px;
+  }
+  .description__title {
+    width: 580px;
+    font-size: 48px;
+    margin-left: 230px;
+  }
+  .description__text {
+    width: 504px;
+    margin-left: 265px;
+    font-size: 24px;
+  }
+  .description__details {
+    margin-left: 487px;
+  }
+  .description__item--mobile {
+    display: block;
+  }
+}
+.photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 276px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  background-image: url(../img/instagram-mobile.png);
+  background-position: 0 60px;
+  background-repeat: no-repeat;
+}
+.photo__social-photo--mobile {
+  display: none;
+}
+.photo__social-photo {
+  margin-bottom: 10px;
+}
+.photo__social-photo:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.photo__social-photo:active {
+  cursor: pointer;
+  opacity: 0.3;
+}
+@media (min-width: 1040px) {
+  .photo {
+    width: 1040px;
+    height: 320px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 50px;
+    background-image: url(../img/instagram-desktop.png);
+    background-position: 278px 35px;
+  }
+  .photo__social-photo {
+    width: 140px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .photo__social-photo--mobile {
+    display: block;
+  }
+}
+.motto {
+  height: 210px;
+  padding-top: 10px;
+  background-image: url(../img/grains-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.motto__container {
+  width: 276px;
+  margin: 0 auto;
+}
+.motto__title {
+  width: 260px;
+  margin-top: 0;
+  font-size: 36px;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+  color: white;
+}
+@media (min-width: 1040px) {
+  .motto {
+    height: 340px;
+    background-image: url(../img/grains-desktop.jpg);
+  }
+  .motto__container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+  .motto__title {
+    width: 300px;
+    margin-top: 0;
+    font-size: 48px;
+    font-family: "ApercuPro Regular", Arial, sans-serif;
+    color: white;
+  }
+}
+.preview {
+  width: 320px;
+  height: 415px;
+  margin: 0 auto;
+  padding-top: 5px;
+  background-image: url(../img/header-photo-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.preview__container {
+  width: 276px;
+  height: 420px;
+}
+.preview__title {
+  width: 235px;
+  margin-left: 25px;
+  color: white;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: lighter;
+}
+.preview__toggles {
+  margin-top: 172px;
+  margin-left: 28px;
+}
+.preview__toggle {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 0;
+  background-color: white;
+  box-shadow: none;
+}
+.preview__toggle:hover {
+  opacity: 0.6;
+}
+.preview__toggle:active {
+  opacity: 0.3;
+}
+.preview__toggle--active {
+  background-color: transparent;
+}
+@media (min-width: 1040px) {
+  .preview {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/header-photo-desktop.jpg);
+    background-position: center;
+  }
+  .preview__container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+  .preview__title {
+    width: 355px;
+    margin-left: 5px;
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .preview__toggles {
+    margin-top: 272px;
+    margin-left: 3px;
+  }
+}
+.coffee {
+  width: 276px;
+  height: 600px;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+.coffee__text {
+  font-size: 18px;
+  color: black;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+  margin-bottom: 30px;
+}
+@media (min-width: 1040px) {
+  .coffee {
+    width: 830px;
+    height: 960px;
+    padding-top: 85px;
+  }
+  .coffee__text {
+    font-size: 24px;
+    color: black;
+    margin-left: 30px;
+    margin-bottom: 55px;
+  }
+}
+.contact {
+  display: none;
+}
+@media (min-width: 1040px) {
+  .contact {
+    display: block;
+    border-top: 1px solid black;
+  }
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 1040px;
+    height: 380px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .contact__box-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 145px;
+    height: 80px;
+    margin-right: 125px;
+  }
+  .contact__link {
+    width: 150px;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+    text-decoration: none;
+  }
+  .contact__link:hover {
+    opacity: 0.6;
+  }
+  .contact__link:active {
+    opacity: 0.3;
+  }
+  .contact__social-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 150px;
+    height: 38px;
+    margin-left: 350px;
+  }
+  .contact__social-link {
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    font-size: 0;
+    background-image: url(../img/social.png);
+    background-repeat: no-repeat;
+  }
+  .contact__social-link--inst {
+    background-position: 0 0;
+  }
+  .contact__social-link--facebook {
+    background-position: -53px 0;
+  }
+  .contact__social-link--vk {
+    background-position: -107px 0;
+  }
+  .contact__social-link:hover {
+    opacity: 0.6;
+  }
+  .contact__social-link:active {
+    opacity: 0.3;
+  }
+  .contact__copyright-box {
+    width: 220px;
+    margin-right: 530px;
+    padding-top: 25px;
+  }
+  .contact__copyright {
+    font-size: 14px;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+  }
+  .contact__adress-box {
+    width: 275px;
+    text-align: right;
+  }
+  .contact__tel {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+  }
+  .contact__tel:hover {
+    opacity: 0.6;
+  }
+  .contact__tel:active {
+    opacity: 0.3;
+  }
+  .contact__mail {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+  }
+  .contact__mail:hover {
+    opacity: 0.6;
+  }
+  .contact__mail:active {
+    opacity: 0.3;
+  }
+}
+.bake {
+  display: none;
+}
+@media (min-width: 1040px) {
+  .bake {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1040px;
+    height: 560px;
+    margin: 0 auto;
+    outline: 1px solid #f4e6d4;
+  }
+  .bake__info-box {
+    padding-left: 40px;
+  }
+  .bake__info-news {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+  }
+  .bake__title {
+    margin-top: 25px;
+    font-size: 48px;
+    line-height: 50px;
+    color: black;
+    font-family: "ApercuPro Regular", Arial, sans-serif;
+  }
+  .bake__description {
+    width: 450px;
+    margin-bottom: 170px;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+    font-family: "ApercuPro Regular", Arial, sans-serif;
+  }
+  .bake__details {
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+  }
+  .bake__details:hover {
+    opacity: 0.6;
+  }
+  .bake__details:active {
+    opacity: 0.3;
+  }
+}
+.brew {
+  width: 278px;
+  height: 820px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.brew__news {
+  margin-left: 112px;
+  font-size: 12px;
+  line-height: 14px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+  font-weight: bold;
+}
+.brew__title {
+  margin-bottom: 35px;
+  margin-top: 25px;
+  font-size: 36px;
+  line-height: 38px;
+  color: black;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+  text-align: center;
+}
+.brew__photo-box {
+  margin-bottom: 26px;
+}
+.brew__description {
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+}
+@media (min-width: 1040px) {
+  .brew {
+    width: 830px;
+    height: 1120px;
+    padding-bottom: 150px;
+    margin-top: 190px;
+  }
+  .brew__news {
+    margin-left: 400px;
+  }
+  .brew__title {
+    width: 650px;
+    margin-left: 92px;
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .brew__photo-box {
+    margin-bottom: 60px;
+  }
+  .brew__description {
+    width: 684px;
+    margin-left: 75px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.map {
+  width: 276px;
+  height: 640px;
+  margin: 0 auto;
+}
+.map__adress-box--mobile {
+  display: none;
+}
+.map__adress-title {
+  font-size: 24px;
+  line-height: 26px;
+  color: black;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+}
+.map__adress-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+}
+.map__tel {
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+  text-decoration: none;
+}
+.map__tel:hover {
+  opacity: 0.6;
+}
+.map__tel:active {
+  opacity: 0.3;
+}
+.map__coordinates {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+  margin-top: 15px;
+}
+.map__coordinates:hover {
+  opacity: 0.6;
+}
+.map__coordinates:active {
+  opacity: 0.3;
+}
+.map__adress-text--add-style {
+  margin-bottom: -14px;
+}
+@media (min-width: 1040px) {
+  .map {
+    position: relative;
+    width: 1040px;
+    height: 820px;
+  }
+  .map__adress-box--mobile {
+    display: block;
+    position: absolute;
+    left: 330px;
+    bottom: 35px;
+  }
+}
+.online-shop {
+  width: 276px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.online-shop__box--mobile {
+  display: none;
+}
+.online-shop__title {
+  margin-bottom: 9px;
+  font-size: 24px;
+  line-height: 25px;
+  color: black;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+  font-weight: normal;
+}
+.online-shop__mail {
+  font-size: 14px;
+  line-height: 15px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+  text-decoration: none;
+}
+.online-shop__mail:hover {
+  opacity: 0.6;
+}
+.online-shop__mail:active {
+  opacity: 0.3;
+}
+@media (min-width: 1040px) {
+  .online-shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 590px;
+    height: 160px;
+  }
+  .online-shop__box--mobile {
+    display: block;
+  }
+  .online-shop__box:nth-child(2n+1) {
+    margin-right: 150px;
+  }
+}
+.feedback {
+  width: 276px;
+  height: 460px;
+  margin: 0 auto;
+}
+.feedback__title {
+  font-size: 36px;
+  line-height: 38px;
+  color: black;
+  font-family: "ApercuPro Regular", Arial, sans-serif;
+}
+.feedback__form {
+  position: relative;
+}
+.feedback__form::before {
+  content: "";
+  position: absolute;
+  top: -65px;
+  right: -15px;
+  width: 88px;
+  height: 99px;
+  background-image: url(../img/stamp-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.feedback__message {
+  width: 253px;
+  height: 177px;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #ebdecd;
+  resize: none;
+}
+.feedback__message::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 15px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+}
+.feedback__name {
+  width: 255px;
+  height: 56px;
+  padding-left: 15px;
+  border: 2px solid #ebdecd;
+}
+.feedback__name::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 15px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+}
+.feedback__name--mobile {
+  display: none;
+}
+.feedback__captcha {
+  display: none;
+}
+.feedback__symbols {
+  display: none;
+}
+.feedback__btn {
+  width: 274px;
+  height: 58px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ebdecd;
+  background-color: #ebdecd;
+}
+.feedback__btn:hover {
+  opacity: 0.6;
+}
+.feedback__btn:active {
+  opacity: 0.3;
+}
+.feedback__copyright {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 13px;
+  color: black;
+  font-family: "ApercuPro Mono", Arial, sans-serif;
+}
+@media (min-width: 1040px) {
+  .feedback {
+    width: 680px;
+    height: 450px;
+    padding-bottom: 40px;
+  }
+  .feedback__name {
+    display: block;
+  }
+  .feedback__name--mobile {
+    display: block;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  .feedback__title {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .feedback__message {
+    height: 196px;
+    width: 659px;
+  }
+  .feedback__form::before {
+    top: -140px;
+    right: -78px;
+    width: 160px;
+    height: 182px;
+    background-image: url(../img/stamp-desktop.png);
+  }
+  .feedback__box {
+    width: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feedback__name {
+    width: 301px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+  .feedback__captcha {
+    display: block;
+    width: 226px;
+    height: 56px;
+    border: 2px solid #ebdecd;
+    background-image: url(../img/captcha.jpg);
+    background-repeat: no-repeat;
+    background-position: 52px 5px;
+    margin-right: 40px;
+  }
+  .feedback__symbols {
+    display: block;
+    width: 211px;
+    height: 56px;
+    padding-left: 15px;
+    border: 2px solid #ebdecd;
+  }
+  .feedback__symbols::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 15px;
+    color: black;
+    font-family: "ApercuPro Mono", Arial, sans-serif;
+  }
+  .feedback__btn {
+    width: 136px;
+    height: 62px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+  .feedback__copyright {
+    display: none;
+  }
+}

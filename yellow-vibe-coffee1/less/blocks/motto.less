@@ -1,0 +1,36 @@
+.motto {
+  height: 210px;
+  padding-top: 10px;
+  background-image: url(../img/grains-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  &__container {
+    width: 276px;
+    margin: 0 auto;
+  }
+  &__title {
+    width: 260px;
+    margin-top: 0;
+    font-size: 36px;
+    font-family: @apercu-pro-regular;
+    color: white;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .motto {
+    height: 340px;
+    background-image: url(../img/grains-desktop.jpg);
+    &__container {
+      width: 1040px;
+      margin: 0 auto;
+    }
+    &__title {
+      width: 300px;
+      margin-top: 0;
+      font-size: 48px;
+      font-family: @apercu-pro-regular;
+      color: white;
+    }
+  }
+}

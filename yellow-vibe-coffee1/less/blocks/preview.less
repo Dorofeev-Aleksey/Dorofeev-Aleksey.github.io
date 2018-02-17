@@ -1,0 +1,68 @@
+.preview {
+  width: 320px;
+  height: 415px;
+  margin: 0 auto;
+  padding-top: 5px;
+  background-image: url(../img/header-photo-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  &__container {
+    width: 276px;
+    height: 420px;
+  }
+  &__title {
+    width: 235px;
+    margin-left: 25px;
+    color: white;
+    font-family: @apercu-pro-regular;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: lighter;
+  }
+  &__toggles {
+    margin-top: 172px;
+    margin-left: 28px
+  }
+  &__toggle {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 0;
+    background-color: white;
+    box-shadow: none;
+  }
+  &__toggle:hover {
+    opacity: 0.6;
+  }
+  &__toggle:active {
+    opacity: 0.3;
+  }
+  &__toggle--active {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .preview {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/header-photo-desktop.jpg);
+    background-position: center;
+    &__container {
+      width: 1040px;
+      margin: 0 auto;
+    }
+    &__title {
+      width: 355px;
+      margin-left: 5px;
+      font-size: 48px;
+      line-height: 50px;
+    }
+    &__toggles {
+      margin-top: 272px;
+      margin-left: 3px;
+    }
+  }
+}
