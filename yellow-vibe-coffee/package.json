@@ -1,7 +1,7 @@
 {
-  "name": "pink",
+  "name": "yellow-vibe-coffee",
   "version": "1.0.0",
-  "description": "Проект Пинк",
+  "description": "Тестовое задание",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
