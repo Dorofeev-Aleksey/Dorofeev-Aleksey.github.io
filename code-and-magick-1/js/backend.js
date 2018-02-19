@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var SERVER_URL = 'https://1510.dump.academy/code-and-magick';
+  var SERVER_URL = 'https://js.dump.academy/code-and-magick';
   var TIMEOUT = 10000;
   var alertMessages = {
     errorLoad: 'Произошла ошибка',
