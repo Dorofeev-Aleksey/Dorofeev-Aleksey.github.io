@@ -341,6 +341,9 @@ body {
 .main__item--nerds {
   background-image: url(../img/screen-nerds.png);
 }
+.main__item--yvc {
+  background-image: url(../img/screen-yvc.png);
+}
 .main__item-title {
   position: relative;
   bottom: -245px;
