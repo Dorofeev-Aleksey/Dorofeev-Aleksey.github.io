@@ -16,30 +16,56 @@
   }
   &__toogler-box {
     position: absolute;
-    top: 20px;
+    top: 19px;
     right: 0;
     width: 25px;
     height: 20px;
     font-size: 0;
   }
-  &__toggler {
+  &__toogler {
     width: 25px;
     height: 20px;
     background-color: transparent;
     border: none;
-    background-image: url(../img/menu-mobile.png);
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+  &__toogler--closed {
+    background-image: url(../img/menu-mobile.png);
+  }
+  &__toogler--opened {
+    background-image: url(../img/menu-cross.png);
+    width: 25px;
+    height: 25px;
+  }
   &__menu {
+    display: block;
+    width: 320px;
+    position: absolute;
+    top: 43px;
+    left: -12px;
+    z-index: 2000;
+  }
+  &__menu--closed {
     display: none;
+  }
+  &__menu--opened {
+    display: block;
   }
   &__menu-list {
     margin: 0;
+    margin-top: 17px;
     padding: 0;
   }
   &__menu-item {
+    padding: 10px 0;
+    background-color: white;
     list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  &__menu-item-wrest1 {
+    border-top: 1px solid black;
   }
   &__menu-item:hover {
     text-decoration: underline;
@@ -47,6 +73,12 @@
   &__menu-item:active {
     opacity: 0.3;
     text-decoration: underline;
+  }
+  &__menu-link {
+    font-size: 18px;
+    color: black;
+    font-family: @apercu-pro-regular;
+    text-decoration: none;
   }
 }
 
@@ -61,19 +93,22 @@
       display: none;
     }
     &__menu {
+      width: auto;
       display: block;
+      position: relative;
+      top: -20px;
+      right: 0;
+    }
+    &__menu-item-wrest1 {
+      border-top: none;
     }
     &__menu-list {
       display: flex;
     }
     &__menu-item {
       padding: 20px 15px;
-    }
-    &__menu-link {
-      font-size: 18px;
-      color: black;
-      font-family: @apercu-pro-regular;
-      text-decoration: none;
+      text-align: left;
+      border-bottom: none;
     }
   }
 }

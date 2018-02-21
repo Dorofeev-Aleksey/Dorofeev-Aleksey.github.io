@@ -15,10 +15,10 @@
           <img src="img/logo-mobile.png" alt="Кофейня Yellow Vibe Coffee">
         </picture>
       </a>
-      <div class="page-header__toogler-box page-header__toogler-box--closed">
-        <button class="page-header__toggler" type="button">Открыть меню</button>
+      <div class="page-header__toogler-box">
+        <button class="page-header__toogler page-header__toogler--closed" type="button">Открыть меню</button>
       </div>
-      <nav class="page-header__menu">
+      <nav class="page-header__menu page-header__menu--closed">
         <ul class="page-header__menu-list">
           <li class="page-header__menu-item page-header__menu-item-wrest1">
             <a class="page-header__menu-link" href="#">О нас</a>
@@ -37,18 +37,39 @@
     </header>
 
     <main class="main">
-      <section class="preview">
-        <div class="preview__container">
-          <h1 class="preview__title">Кофе для тех, кому важно, что в его чашке</h1>
-          <div class="preview__toggles">
-            <button class="preview__toggle preview__toggle--active">1</button>
-            <button class="preview__toggle">2</button>
-            <button class="preview__toggle">3</button>
-            <button class="preview__toggle">4</button>
-            <button class="preview__toggle">5</button>
+      <section class="slider slider--photo1">
+        <div class="slider__container">
+          <input type="radio" value="1" id="btn-1" name="toggle" checked>
+          <input type="radio" value="2" id="btn-2" name="toggle">
+          <input type="radio" value="3" id="btn-3" name="toggle">
+          <input type="radio" value="4" id="btn-4" name="toggle">
+          <input type="radio" value="5" id="btn-5" name="toggle">
+    	    <div class="slider__slider-controls">
+            <label class="slider__label" for="btn-1"></label>
+            <label class="slider__label" for="btn-2"></label>
+            <label class="slider__label" for="btn-3"></label>
+            <label class="slider__label" for="btn-4"></label>
+            <label class="slider__label" for="btn-5"></label>
+          </div>
+          <div class="slider__slides">
+            <div class="slider__slide">
+              <h1 class="slider__title">Кофе для тех, кому важно, что в его чашке</h1>
+            </div>
+            <div class="slider__slide">
+              <h1 class="slider__title">Кофе для тех, кому важно, что в его чашке</h1>
+            </div>
+            <div class="slider__slide">
+              <h1 class="slider__title">Кофе для тех, кому важно, что в его чашке</h1>
+            </div>
+            <div class="slider__slide">
+              <h1 class="slider__title">Кофе для тех, кому важно, что в его чашке</h1>
+            </div>
+            <div class="slider__slide">
+              <h1 class="slider__title">Кофе для тех, кому важно, что в его чашке</h1>
+            </div>
           </div>
         </div>
-      </section>
+  	  </section>
       <section class="description">
         <h2 class="description__title">Кофе, кофе, кофе!</h2>
         <p class="description__text">Yellow Vibe Coffee — сеть кофеен, работающая с зерном класса speciality. Для нас важна высота произрастания кофейных деревьев, тип почвы и уход за ней, вовремя собранные ягоды и правильное хранение зерен. Мы работаем с лучшими поставщиками и сами обжариваем зерна.</p>
@@ -273,8 +294,9 @@
     <footer class="page-footer">
 
     </footer>
-    <script type="text/javascript">
 
-    </script>
+    <script src="js/header.js"></script>
+    <script src="js/slider.js"></script>
+
   </body>
 </html>
