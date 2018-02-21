@@ -621,6 +621,9 @@ body {
     height: 560px;
     margin: 0;
     position: relative;
+    background-size: 1440px 560px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .slider__container {
     width: 1040px;
@@ -659,13 +662,19 @@ body {
     display: block;
   }
   .slider__title {
-    width: 320px;
+    width: 360px;
     margin-left: 0;
+    margin-top: 60px;
     font-size: 48px;
+    line-height: 53px;
   }
   .slider__slides .slider__slide:nth-child(n) {
     background-image: none;
     background-color: transparent;
+  }
+  .slider__slider-controls {
+    bottom: 50px;
+    left: -30px;
   }
 }
 .coffee {
