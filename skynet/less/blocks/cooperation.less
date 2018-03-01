@@ -1,0 +1,149 @@
+.cooperation {
+  background-color: #fafafa;
+  margin: 0;
+  &__container {
+    width: 422px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+  &__title {
+    position: relative;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__title:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 61px;
+    width: 3px;
+    height: 17px;
+    background-color: #2ba9f3;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    width: 168px;
+    height: 83px;
+    margin-bottom: 20px;
+    border: 1px solid #c2c2c2;
+    list-style-type: none;
+  }
+  &__item:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  &__list &__item:nth-child(2n+1) {
+    margin-right: 30px;
+    margin-left: 26px;
+  }
+  &__item--agc {
+    background-image: url(../img/bor-stekol-zavod_white.jpg);
+    background-repeat: no-repeat;
+    background-size: 72px 60px;
+    background-position: center;
+  }
+  &__item--oka {
+    background-image: url(../img/oka_white.jpg);
+    background-repeat: no-repeat;
+    background-size: 141px 47px;
+    background-position: center;
+  }
+  &__item--sber {
+    background-image: url(../img/sber_white.png);
+    background-repeat: no-repeat;
+    background-size: 138px 35px;
+    background-position: center;
+  }
+  &__item--sber:hover {
+    background-image: url(../img/sber.png);
+    cursor: pointer;
+  }
+  &__item--spar {
+    background-image: url(../img/spar_white.png);
+    background-repeat: no-repeat;
+    background-size: 137px 26px;
+    background-position: center;
+  }
+  &__item--stol {
+    background-image: url(../img/stolitca_nighny_white.png);
+    background-repeat: no-repeat;
+    background-size: 101px 54px;
+    background-position: center;
+  }
+  &__item--vib {
+    background-image: url(../img/vibor_white.jpg);
+    background-repeat: no-repeat;
+    background-size: 108px 52px;
+    background-position: center;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .cooperation {
+    &__container {
+      width: 724px;
+      padding-bottom: 55px;
+    }
+    &__title {
+      margin-bottom: 35px;
+    }
+    &__title:before {
+      top: 5px;
+      left: 45px;
+    }
+    &__list &__item:nth-child(2n+1) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    & &__list &__item {
+      margin-right: 30px;
+    }
+    &__list &__item:nth-child(3n+1) {
+      margin-left: 76px;
+    }
+    &__title--style:before {
+      top: 5px;
+      left: 36px;
+    }
+
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .cooperation {
+    &__container {
+      width: 1170px;
+      padding-bottom: 55px;
+    }
+    &__title:before {
+      top: 5px;
+      left: 265px;
+    }
+    &__title--style {
+      margin-bottom: 45px;
+      margin-top: 45px;
+    }
+    &__title--style:before {
+      top: 5px;
+      left: 120px;
+    }
+    & &__list &__item {
+      margin-right: 30px;
+    }
+    &__list &__item:nth-child(3n+1) {
+      margin-left: 0;
+    }
+    & &__list &__item:nth-child(6) {
+      margin-right: 0;
+    }
+
+  }
+}

@@ -1,0 +1,220 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 422px;
+  height: 190px;
+  padding-top: 20px;
+  margin: 0 auto;
+  &__logo {
+    width: 98px;
+    height: 90px;
+  }
+  &__logo:hover {
+    opacity: 0.6;
+  }
+  &__logo:active {
+    opacity: 0.3;
+  }
+  &__contact-box {
+    width: 214px;
+    padding-left: 90px;
+    padding-top: 10px;
+  }
+  &__tel {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #393939;
+    text-decoration: none;
+  }
+  &__tel:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 25px;
+    top: 0;
+    left: -38px;
+    background-image: url(../img/tel-icon.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__tel:hover {
+    opacity: 0.6;
+  }
+  &__tel:active {
+    opacity: 0.3;
+  }
+  &__mail {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    line-height: 29px;
+    color: #393939;
+    text-decoration: none;
+  }
+  &__mail:before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 22px;
+    top: 3px;
+    left: -41px;
+    background-image: url(../img/email-icon.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__mail:hover {
+    opacity: 0.6;
+  }
+  &__mail:active {
+    opacity: 0.3;
+  }
+  &__menu {
+    width: 422px;
+  }
+  &__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  &__menu-item {
+    list-style-type: none;
+    padding: 13px 20px;
+  }
+  &__menu-link {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #393939;
+  }
+  &__menu-link:hover {
+    opacity: 0.6;
+  }
+  &__menu-link:active {
+    opacity: 0.3;
+  }
+  & &__menu-link--active {
+    color: #2ba9f3;
+    border-bottom: 3px solid #2ba9f3;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .page-header {
+    width: 724px;
+    height: 114px;
+    position: relative;
+    &__logo {
+      width: 104px;
+      height: 95px;
+    }
+    &__contact-box {
+      width: 476px;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      top: 35px;
+      right: 0;
+    }
+    &__tel {
+      margin-right: 116px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    &__tel:before {
+      top: -1px;
+      left: -38px;
+    }
+    &__mail {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    &__mail:before {
+      top: 0px;
+      left: -41px;
+    }
+    &__menu {
+      width: 558px;
+      margin-left: 62px;
+      margin-top: 65px;
+    }
+    &__menu-list {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__menu-item {
+      padding: 0 0;
+    }
+    &__menu-link {
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #393939;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .page-header {
+    justify-content: space-between;
+    width: 1170px;
+    height: 125px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    &__logo {
+      width: 119px;
+      height: 109px;
+      order: 0;
+    }
+    &__contact-box {
+      width: 177px;
+      display: block;
+      order: 2;
+      margin-left: -50px;
+      margin-top: 15px;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+    &__tel {
+      margin-right: 0;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 22px;
+    }
+    &__tel:before {
+      top: -1px;
+      left: -38px;
+    }
+    &__mail {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    &__mail:before {
+      top: 0px;
+      left: -41px;
+    }
+    &__menu {
+      order: 1;
+      width: 670px;
+      margin-left: 0;
+      margin-top: 45px;
+    }
+    &__menu-list {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__menu-item {
+      padding: 0 0;
+    }
+    &__menu-link {
+      font-size: 18px;
+    }
+  }
+}

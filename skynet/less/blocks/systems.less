@@ -1,0 +1,238 @@
+.systems {
+  width: 442px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  &__breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 402px;
+    margin: 0;
+    padding-left: 0;
+  }
+  &__link {
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6c6c6c;
+    text-decoration: none;
+    margin-right: 25px;
+  }
+  &__breadcrumbs-item {
+    list-style-type: none;
+  }
+  &__link--stick {
+    margin-left: 10px;
+  }
+  &__link--stick::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 13px;
+    top: 2px;
+    left: -17px;
+    background-color: #6c6c6c;
+    transform: rotate(15deg);
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 34px;
+    color: #333333;
+  }
+  &__title {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 58px;
+    margin: 0;
+    background-color: #2ba9f3;
+    font-size: 18px;
+    line-height: 29px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &__title:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    width: 26px;
+    height: 7px;
+    background-color: white;
+    border-radius: 13%;
+  }
+  &__text {
+    position: relative;
+    padding-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    font-size: 16px;
+    line-height: 38px;
+    color: #333333;
+    border: 1px solid #c2c2c2;
+    border-bottom: none;
+    padding-top: 15px;
+  }
+  &__text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 382px;
+    height: 1px;
+    background-color: #c2c2c2;
+  }
+  &__bold {
+    font-weight: bold;
+  }
+  &__list {
+    margin: 0;
+    padding: 0 20px;
+  }
+  &__item {
+    list-style-type: none;
+  }
+  &__abbreviation {
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: bold;
+  }
+  &__transcript {
+    font-size: 14px;
+    line-height: 38px;
+  }
+  & &__list--1 {
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 0;
+    padding-right: 15px;
+  }
+  & &__list--2 {
+    border: 1px solid #c2c2c2;
+    border-bottom: none;
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  &__title--style {
+    margin-top: 40px;
+  }
+  &__list--style {
+    display: block;
+    margin-top: 20px;
+  }
+  &__list--style-1 {
+    margin-top: 35px;
+    margin-bottom: -15px;
+  }
+  &__item-photo {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+  &__list-photo {
+    margin-top: 0;
+    padding-top: 10px;
+    border: 1px solid #c2c2c2;
+    border-top: none;
+  }
+  &__list-photo--style {
+    border: none;
+  }
+  &__item-title {
+    display: block;
+    width: 200px;
+    background-color: white;
+  }
+  &__item-photo {
+    width: 270px;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .systems {
+    width: 724px;
+    &__text {
+      position: relative;
+      padding-bottom: 19px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0 20px;
+      padding-right: 30px;
+      font-size: 16px;
+      line-height: 38px;
+      color: #333333;
+      border: 1px solid #c2c2c2;
+      border-bottom: none;
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+    &__text::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 19px;
+      width: 684px;
+      height: 1px;
+      background-color: #c2c2c2;
+    }
+    &__list--1 {
+      padding-top: 15px;
+    }
+    &__list-photo {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .systems {
+    width: 1170px;
+    &__text::after {
+      bottom: 0;
+      left: 20px;
+      width: 1108px;
+      height: 1px;
+      background-color: #c2c2c2;
+    }
+    & &__list--2 {
+      position: absolute;
+      top: 238px;
+      right: 170px;
+      border-left: 0;
+      border-right: 0;
+    }
+    &__box {
+      position: relative;
+    }
+    &__list-photo {
+      padding: 0;
+      margin: 0;
+      width: 1170px;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
+    &__item-photo {
+      margin: 0;
+      margin-right: 0;
+      width: 255px;
+      height: 170px;
+    }
+    &__photo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
