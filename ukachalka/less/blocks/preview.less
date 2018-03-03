@@ -1,0 +1,89 @@
+.preview {
+  width: 462px;
+  height: 340px;
+  padding-top: 130px;
+  margin: 0 auto;
+  background-color: #615853;
+  background-image: url(../img/picture-1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  &__container {
+    width: 422px;
+    height: 470px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 36px;
+    color: white;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    list-style-type: none;
+  }
+  &__text {
+    position: relative;
+    margin-left: 45px;
+    font-size: 18px;
+    line-height: 42px;
+    color: white;
+  }
+  &__text:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 0;
+    left: -42px;
+    background-image: url(../img/check-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: @tablet-widths) {
+  .preview {
+    width: 900px;
+    height: 260px;
+    padding-top: 80px;
+    background-image: url(../img/picture-1-tablet.jpg);
+    &__container {
+      width: 724px;
+      height: 340px;
+    }
+    &__title {
+      margin-bottom: 25px;
+      font-size: 26px;
+      line-height: 29.04px;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .preview {
+    width: 1280px;
+    height: 380px;
+    padding-top: 120px;
+    background-image: url(../img/picture-1-desktop.jpg);
+    &__container {
+      width: 1170px;
+      height: 500px;
+    }
+    &__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 38px;
+      line-height: 38px;
+      color: white;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 60px;
+    }
+  }
+}
