@@ -1,163 +1,121 @@
 .page-footer {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  width: 314px;
+  justify-content: space-between;
+  width: 1170px;
+  height: 130px;
   margin: 0 auto;
-  padding-left: 108px;
-  padding-bottom: 20px;
-  &__logo {
-    position: absolute;
-    top: 30px;
-    left: -1px;
-    width: 98px;
-    height: 90px;
+  &__logo-box {
+    position: relative;
+    width: 270px;
+    height: 130px;
   }
-  &__logo:hover {
+  &__name {
+    position: absolute;
+    left: 68px;
+    bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+  }
+  &__logo-box:hover {
     opacity: 0.6;
   }
-  &__logo:active {
+  &__logo-box:active {
     opacity: 0.3;
   }
-  &__info-box {
-    margin-top: 28px;
-    margin-bottom: 20px;
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 270px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-  &__text {
-    font-size: 14px;
-    line-height: 26px;
-    margin-top: 0;
-    margin-bottom: 0px;
+  &__nav-item {
+    list-style-type: none;
   }
-  &__tel {
+  &__nav-link {
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #333333;
+  }
+  &__nav-link:hover {
+    text-decoration: underline;
+    color: #faadbf;
+  }
+  &__nav-link:active {
+    opacity: 0.5;
+    text-decoration: underline;
+    color: #faadbf;
+  }
+  &__mail-box {
+    width: 230px;
+  }
+  &__mail {
     display: block;
     position: relative;
-    margin-bottom: 15px;
-    font-size: 20px;
-    line-height: 29px;
-    color: #393939;
+    margin-top: 50px;
+    margin-left: 48px;
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
-    margin-left: 38px;
-    margin-top: 15px;
+    color: #333333;
+    font-weight: normal;
   }
-  &__tel:before {
+  &__mail:before {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 25px;
-    top: 0;
-    left: -38px;
-    background-image: url(../img/tel-icon.png);
+    top: -5px;
+    left: -45px;
+    width: 33px;
+    height: 31px;
+    background-image: url(../img/icons/message.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  &__mail:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  &__mail:active {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  &__tel-box {
+    position: relative;
+    width: 155px;
+    padding-top: 35px;
+    padding-left: 45px;
+  }
+  &__tel-box:before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 45px;
+    left: -3px;
+    background-image: url(../img/icons/smartphone.png);
     background-position: 0 0;
     background-repeat: no-repeat;
   }
   &__tel:hover {
     opacity: 0.6;
+    cursor: pointer;
   }
   &__tel:active {
     opacity: 0.3;
+    cursor: pointer;
   }
-  &__mail {
+  &__tel {
     display: block;
-    position: relative;
-    font-size: 20px;
-    line-height: 29px;
-    color: #393939;
     text-decoration: none;
-    margin-left: 40px;
-  }
-  &__mail:before {
-    content: "";
-    position: absolute;
-    width: 29px;
-    height: 22px;
-    top: 3px;
-    left: -41px;
-    background-image: url(../img/email-icon.png);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-  &__mail:hover {
-    opacity: 0.6;
-  }
-  &__mail:active {
-    opacity: 0.3;
-  }
-}
-
-@media (min-width: @tablet-widths) {
-  .page-footer {
-    width: 724px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 0;
-    padding-top: 30px;
-    &__logo {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 104px;
-      height: 95px;
-    }
-    &__info-box {
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 35px;
-    }
-    &__address-box {
-      margin-left: 50px;
-    }
-    &__contact-box {
-      display: flex;
-    }
-    &__tel {
-      position: relative;
-      margin-bottom: 0;
-      margin-left: 176px;
-      margin-top: 10px;
-      margin-right: 158px;
-    }
-    &__tel:before {
-      top: 0;
-      left: -38px;
-    }
-    &__mail {
-      margin-top: 8px;
-    }
-    &__mail:before {
-      top: 3px;
-      left: -41px;
-    }
-  }
-}
-
-@media (min-width: @desktop-widths) {
-  .page-footer {
-    width: 1170px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-top: 45px;
-    &__logo {
-      width: 119px;
-      height: 109px;
-    }
-    &__contact-box {
-      display: block;
-    }
-    &__info-box {
-      width: 320px;
-      margin: 0;
-    }
-    &__address-box {
-      margin-left: 0;
-    }
-    &__tel {
-      position: relative;
-      margin: 0;
-      margin-bottom: 20px;
-    }
-    &__mail {
-      margin: 0;
-    }
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
   }
 }

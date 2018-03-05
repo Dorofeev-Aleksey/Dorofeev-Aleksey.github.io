@@ -1,0 +1,127 @@
+.slider {
+  position: relative;
+  height: 710px;
+  background-image: url(../img/slider-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  &__space {
+    height: 50px;
+    background-color: white;
+  }
+  &__container {
+    position: relative;
+    width: 1170px;
+    height: 660px;
+    margin: 0 auto;
+  }
+  &__slider-controls {
+    position: absolute;
+    bottom: 158px;
+    left: 0;
+    width: 120px;
+    height: 38px;
+  }
+  &__btn {
+    position: relative;
+    width: 41px;
+    height: 38px;
+    margin-right: 6px;
+    padding: 0;
+    background-color: #3a8dbd;
+    border: none;
+  }
+  &__btn:hover {
+    background-color: #faadbf;
+  }
+  &__btn:active {
+    background-color: #faadbf;
+    opacity: 0.4;
+  }
+  &__btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  &__btn--prev:before {
+    transform: rotate(45deg);
+    top: 10px;
+    left: 15px;
+  }
+  &__btn--next:before {
+    transform: rotate(225deg);
+    top: 10px;
+    left: 7px;
+  }
+  &__slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 70px;
+  }
+  &__slide--active {
+    display: block;
+  }
+  &__slide-stock {
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    width: 400px;
+    height: 43px;
+    padding-top: 17px;
+    background-color: #faadbf;
+    text-align: center;
+  }
+  &__stock-text {
+    display: block;
+    color: white;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-size: 45px;
+    line-height: 57px;
+    color: #3a8dbd;
+    margin-bottom: 5px;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 24px;
+    line-height: 57px;
+    color: #3a8dbd;
+  }
+  &__advantage {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 105px;
+    background-color: #faadbf;
+  }
+  &__advantage-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 27px;
+  }
+  &__advantage-item {
+    width: 270px;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+  }
+}

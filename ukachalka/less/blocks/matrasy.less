@@ -1,0 +1,127 @@
+.matrasy {
+  width: 1170px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  &__slider {
+    height: 768px;
+    position: relative;
+  }
+  &__slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__slide--active {
+    display: block;
+  }
+  &__slide-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  &__slide-item {
+    width: 268px;
+    height: 334px;
+    border: 1px solid #e7e7e7;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  &__slide-list &__slide-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  &__img-box {
+    width: 268px;
+    height: 170px;
+    text-align: center;
+  }
+  &__name {
+    width: 235px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  &__product-box {
+    width: 268px;
+  }
+  &__price {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 12px;
+    margin-left: 10px;
+  }
+  &__cost {
+    font-weight: bold;
+  }
+  &__box {
+    position: relative;
+    bottom: -725px;
+    width: 120px;
+    margin: 0 auto;
+  }
+  &__btn-add {
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #3a8dbd;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    border: 0;
+  }
+  &__btn-add:hover {
+    background-color: #faadbf;
+  }
+  &__btn-add:active {
+    background-color: #faadbf;
+    opacity: 0.5;
+  }
+  &__btn {
+    position: relative;
+    width: 34px;
+    height: 32px;
+    margin-right: 6px;
+    padding: 0;
+    background-color: #3a8dbd;
+    border: none;
+  }
+  &__btn:hover {
+    background-color: #faadbf;
+  }
+  &__btn:active {
+    background-color: #faadbf;
+    opacity: 0.4;
+  }
+  &__btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  &__btn--prev:before {
+    transform: rotate(45deg);
+    top: 8px;
+    left: 12px;
+  }
+  &__btn--next:before {
+    transform: rotate(225deg);
+    top: 8px;
+    left: 5px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #656565;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}

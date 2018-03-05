@@ -1,0 +1,66 @@
+.features {
+  position: relative;
+  width: 1170px;
+  height: 240px;
+  margin: 0 auto;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 853px;
+    height: 1px;
+    background-color: #dcdcdc;
+  }
+  &__title {
+    font-size: 22px;
+    line-height: 24px;
+    color: #656565;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    padding-top: 75px;
+    height: 85px;
+    width: 170px;
+    color: #656565;
+    font-size: 18px;
+    line-height: 24px;
+    list-style-type: none;
+    text-align: center;
+  }
+  &__list &__item:nth-child(1) {
+    background-image: url(../img/icons/features/list.png);
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+  &__list &__item:nth-child(2) {
+    background-image: url(../img/icons/features/stopwatch.png);
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+  &__list &__item:nth-child(3) {
+    background-image: url(../img/icons/features/crying-baby.png);
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+  &__list &__item:nth-child(4) {
+    background-image: url(../img/icons/features/ipod.png);
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+  &__list &__item:nth-child(5) {
+    background-image: url(../img/icons/features/celsius.png);
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+  &__list &__item:nth-child(6) {
+    background-image: url(../img/icons/features/file.png);
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+}

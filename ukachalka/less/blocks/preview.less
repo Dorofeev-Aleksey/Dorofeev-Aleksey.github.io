@@ -1,22 +1,51 @@
 .preview {
-  width: 462px;
-  height: 340px;
-  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
   margin: 0 auto;
-  background-color: #615853;
-  background-image: url(../img/picture-1.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  &__container {
-    width: 422px;
-    height: 470px;
-    margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px; 
+  &__video-box {
+    position: relative;
+    width: 368px;
+    border: 1px solid #dcdcdc;
+  }
+  &__video-title {
+    position: absolute;
+    left: 1px;
+    bottom: -15px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+  }
+  &__info-box {
+    width: 368px;
+    border: 1px solid #dcdcdc;
+    background-image: url(../img/popular/05-Belyy-2-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-size: 188px 124px;
+    background-position: 195px 93px;
+  }
+  &__app-box {
+    width: 368px;
+    border: 1px solid #dcdcdc;
+    background: url(../img/android.png) 163px 60px no-repeat,
+                url(../img/apple-ios-logo.png) 72px 60px no-repeat;
+    background-size: 119px 80px,
+                     89px 80px;
   }
   &__title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 36px;
-    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3a8dbd;
+    text-align: center;
+    margin-bottom: 3px;
   }
   &__list {
     margin: 0;
@@ -24,66 +53,31 @@
   }
   &__item {
     list-style-type: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a1a1a1;
+    margin-left: 5px;
   }
-  &__text {
-    position: relative;
-    margin-left: 45px;
-    font-size: 18px;
-    line-height: 42px;
+  &__link-app {
+    display: block;
+    width: 131px;
+    margin-top: 100px;
+    margin-left: 95px;
     color: white;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 11px 0;
+    padding-left: 39px;
+    background-color: #3a8dbd;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
   }
-  &__text:before {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 20px;
-    top: 0;
-    left: -42px;
-    background-image: url(../img/check-icon.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  &__link-app:hover {
+    background-color: #faadbf;
   }
-}
-
-@media (min-width: @tablet-widths) {
-  .preview {
-    width: 900px;
-    height: 260px;
-    padding-top: 80px;
-    background-image: url(../img/picture-1-tablet.jpg);
-    &__container {
-      width: 724px;
-      height: 340px;
-    }
-    &__title {
-      margin-bottom: 25px;
-      font-size: 26px;
-      line-height: 29.04px;
-      color: white;
-    }
-  }
-}
-
-@media (min-width: @desktop-widths) {
-  .preview {
-    width: 1280px;
-    height: 380px;
-    padding-top: 120px;
-    background-image: url(../img/picture-1-desktop.jpg);
-    &__container {
-      width: 1170px;
-      height: 500px;
-    }
-    &__title {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 38px;
-      line-height: 38px;
-      color: white;
-    }
-    &__text {
-      font-size: 24px;
-      line-height: 60px;
-    }
+  &__link-app:active {
+    background-color: #faadbf;
+    opacity: 0.5;
   }
 }

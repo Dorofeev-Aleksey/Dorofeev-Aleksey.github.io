@@ -1,0 +1,76 @@
+.modal-order {
+  position: fixed;
+  width: 802px;
+  height: 795px;
+  padding-top: 0px;
+  padding: 0 34px;
+  top: 50%;
+  left: 50%;
+  margin-left: -410px;
+  margin-top: -390px;
+  background-color: white;
+  &--closed {
+    display: none;
+  }
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    color: #333333;
+  }
+  &__cancel {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    background-image: url(../img/icons/cancel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__cancel:hover {
+    opacity: 0.6;
+  }
+  &__cancel:active {
+    opacity: 0.3;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 290px;
+    width: 492px;
+  }
+  &__input {
+    width: 211px;
+    height: 36px;
+    border: 1px solid #dcdcdc;
+    padding-left: 21px;
+    margin-bottom: 20px;
+  }
+  &__street {
+    width: 303px;
+  }
+  &__house {
+    width: 43px;
+  }
+  &__flat {
+    width: 43px;
+  }
+  &__message {
+    width: 268px;
+    height: 154px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid #dcdcdc;
+  }
+}
