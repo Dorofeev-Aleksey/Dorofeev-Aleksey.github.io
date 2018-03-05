@@ -344,6 +344,12 @@ body {
 .main__item--yvc {
   background-image: url(../img/screen-yellow-vibe-coffee.png);
 }
+.main__item--ukachalka {
+  background-image: url(../img/screen-ukachalka.png);
+}
+.main__item--skynet {
+  background-image: url(../img/screen-skynet.png);
+}
 .main__item-title {
   position: relative;
   bottom: -245px;
