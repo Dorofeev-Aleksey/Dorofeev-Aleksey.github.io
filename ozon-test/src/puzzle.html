@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="style/app.min.css" rel="stylesheet">
+	<title>Пазл</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="puzzle-game">
+			<div class="puzzle-game__img">
+				<ul class="puzzle-game__list">
+					<li class="puzzle-game__item draggable">
+						<div class="draggable" >
+							 <img src="img/paz_04.jpg" width="200" height="200" draggable="true">
+						</div>
+					</li>
+					<li class="puzzle-game__item draggable">
+						<div class="draggable">
+							 <img src="img/paz_03.jpg" width="200" height="200" draggable="true">
+						</div>
+					</li>
+					<li class="puzzle-game__item">
+						<div class="draggable">
+							 <img src="img/paz_01.jpg" width="200" height="200" draggable="true">
+						</div>
+					</li>
+					<li class="puzzle-game__item draggable">
+						<div class="draggable">
+							 <img src="img/paz_02.jpg" width="200" height="200" draggable="true">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="puzzle-game__field">
+				<div class="puzzle-game__field-wrap" dropzone="move">
+					<div class="droppable"></div>
+					<div class="droppable"></div>
+					<div class="droppable"></div>
+					<div class="droppable"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

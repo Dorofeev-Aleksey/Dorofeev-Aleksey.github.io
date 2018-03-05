@@ -1,0 +1,158 @@
+.banner {
+	&__wrapper {
+		background: url(../img/banner-bg.jpg) no-repeat;
+		background-size: cover;
+		height: 400px;
+		width: 100%;
+		position: relative;
+	}
+
+	&__item {
+		position: absolute;
+		top: 120px;
+
+		&--bosh {
+			display: none;
+		}
+
+		&--teapot {
+			display: none;
+		}
+
+		&--backpack {
+			 top: 35px;
+			 left: 8%;
+		}
+		&--toy {
+			display: none;
+		}
+
+		&--toothbrush {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 790px) {
+	.banner {
+		&__item {
+			position: absolute;
+
+			&--bosh {
+				display: block;
+				top: 130px;
+				animation: right 5s infinite;
+			}
+			&--backpack {
+				top: 35px;
+				left: 245px;
+			}
+			&--toothbrush {
+				display: block;
+				top: 110px;
+				animation: left 5s infinite;
+			}
+		}
+	}
+}
+
+@media (min-width: 1030px) {
+	.banner {
+		&__item {
+			position: absolute;
+			top: 120px;
+
+			&--teapot {
+				display: inline;
+				left: 140px;
+				animation: enlargement 2s linear infinite;
+			}
+			&--backpack {
+				top: 35px;
+				left: 245px;
+			}
+			&--toy {
+				display: block;
+				right: 140px;
+				animation: rotate 2s steps(60, end) infinite;
+			}
+		}
+	}
+}
+
+.banner-small {
+	&__wrapper {
+		background: url(../img/banner-small.png) no-repeat;
+		background-size: cover;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 50px 0;
+		color: $light;
+		text-align: center;
+	}
+
+	.text {
+		font-weight: 100;
+		opacity: 0.8;
+	}
+}
+
+@keyframes enlargement {
+	0% {
+		transform: scale(1);
+	}
+
+	20% {
+		transform: scale(1.05);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	80% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateZ(0);
+	}
+
+	20% {
+		transform: rotateZ(20deg);
+	}
+
+	50% {
+		transform: rotateZ(0);
+	}
+
+	80% {
+		transform: rotateZ(-20deg);
+	}
+	100% {
+		transform: rotateZ(0);
+	}
+}
+
+@keyframes right {
+	0% {
+		left: 13px;
+	}
+	100% {
+		right: 0px;
+	}
+}
+
+@keyframes left {
+	0% {
+		right: 52px;
+	}
+	100% {
+		left: 40px;
+	}
+}

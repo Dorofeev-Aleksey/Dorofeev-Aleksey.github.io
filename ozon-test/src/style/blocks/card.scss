@@ -1,0 +1,115 @@
+.card {
+	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&--style {
+			flex-direction: column;
+		}
+	}
+
+	&__img {
+		margin-bottom: 20px;
+
+		@media (min-width: 768px) {
+			width: 30%;
+			margin-bottom: 0;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom:10px;
+		}
+	}
+
+	&__name {
+		text-align: center;
+		color: #336ba3;
+		font-weight: 100;
+	}
+
+	&__number {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 3px 5px;
+		border-radius: 50%;
+		font-weight: 700;
+		background: $dark;
+
+		&--color15 {
+			color: $sale15;
+		}
+
+		&--color20 {
+			color: $sale20;
+		}
+
+		&--color30 {
+			color: $sale30;
+		}
+
+		&--color40 {
+			color: $sale40;
+		}
+
+		&--color50 {
+			color: $sale50;
+		}
+
+		&--color60 {
+			color: $sale60;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__info {
+		margin-bottom: 20px;
+
+		@media (min-width: 768px) {
+			width: 60%;
+			margin-bottom: 0;
+		}
+
+		.text {
+			padding-left: 25px;
+		}
+	}
+
+	&--column {
+		display: block;
+
+		.card__info {
+			width: auto;
+
+			.text {
+				margin-top: 10px;
+				padding:0;
+			}
+		}
+
+		.card__img {
+			width: auto;
+		}
+
+		.card__link {
+			display: inline;
+		}
+
+		.card__number {
+			display: block;
+			width: 21px;
+			margin-bottom: 10px;
+		}
+
+		.button {
+			margin-bottom: 20px;
+		}
+	}
+}

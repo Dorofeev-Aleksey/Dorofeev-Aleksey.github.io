@@ -1,0 +1,26 @@
+.button {
+	display: block;
+	background: $button;
+	padding: 8px 30px;
+	color: $light;
+	margin: 10px auto;
+	cursor: pointer;
+	font-size: $font-size--h6;
+	font-weight: 100;
+
+	&:hover {
+		background: #056fac;
+	}
+
+	&--big {
+		padding: 10px 50px;
+		font-weight: 600;
+		margin-bottom: 50px;
+
+		&:after {
+			content: '>';
+			display: inline-block;
+			margin-left: 10px;
+		}
+	}
+}

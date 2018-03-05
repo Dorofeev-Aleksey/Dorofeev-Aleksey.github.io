@@ -1,0 +1,49 @@
+.socials {
+	margin: 10px 0 100px 0;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__item {
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-item: center;
+		justify-content: space-between;
+		border-bottom: 0;
+		padding: 5px;
+
+		&:hover {
+			border-bottom: 0;
+		}
+
+		.icon {
+			fill: $light;
+		}
+
+		&--fb {
+			background: $bg-fb;
+		}
+
+		&--tw {
+			background: $bg-tw;
+		}
+
+		&--vk {
+			background: $bg-vk;
+		}
+
+		&--ok {
+			background: $bg-ok;
+		}
+	}
+}
