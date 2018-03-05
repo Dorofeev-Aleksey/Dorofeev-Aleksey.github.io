@@ -396,6 +396,9 @@ body {
   background-position: 70px 20px;
   background-image: url(../img/icons/menu/phone-book.png);
 }
+.page-header__link--active {
+  background-color: #faadbf;
+}
 .slider {
   position: relative;
   height: 710px;
