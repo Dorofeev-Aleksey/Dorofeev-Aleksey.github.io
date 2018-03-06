@@ -1,0 +1,23 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "Форма - тест",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ALexey-Dorofeev",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
+  }
+}

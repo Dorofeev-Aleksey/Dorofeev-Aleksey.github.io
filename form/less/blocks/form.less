@@ -1,0 +1,104 @@
+.form {
+  width: 720px;
+  height: 249px;
+  padding-top: 543px;
+  margin: 0 auto;
+  background-image: url(../img/head.png);
+  background-repeat: no-repeat;
+  background-position: center 236px;;
+  &__box {
+    width: 1201px;
+    height: 1201px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__input {
+    display: block;
+    height: 87px;
+    width: 605px;
+    padding-left: 115px;
+    border: none;
+    margin-bottom: 44px;
+    background-color: white;
+  }
+  &__input::placeholder {
+    font-size: 22px;
+    line-height: 22px;
+    color: #6b6b6b;
+  }
+  &__input--name {
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    background-position: 35px center;
+  }
+  &__input--password {
+    background-image: url(../img/password.png);
+    background-repeat: no-repeat;
+    background-position: 35px center;
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__label {
+    cursor: pointer;
+    position: relative;
+    height: 26px;
+    width: 26px;
+    padding-left: 55px;
+    font-size: 21px;
+    color: white;
+    margin-right: 380px;
+  }
+  &__label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  &__box input:checked + label::before {
+    background-image: url(../img/checkmark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__btn-box label:hover::before {
+    border: 1px solid white;
+  }
+  &__forget {
+    font-size: 21px;
+    line-height: 21px;
+    font-style: italic;
+    color: #8f919a;
+    text-decoration: none;
+  }
+  &__forget:hover {
+    text-decoration: underline;
+  }
+  &__forget:active {
+    text-decoration: underline;
+    opacity: 0.5;
+  }
+  &__submit {
+    width: 384px;
+    height: 87px;
+    margin-top: 55px;
+    margin-left: 170px;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #8f919a;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  &__submit:hover {
+    color: white;
+  }
+  &__submit:active {
+    opacity: 0.5;
+  }
+}
