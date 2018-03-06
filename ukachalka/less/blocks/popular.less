@@ -16,6 +16,18 @@
     height: 1px;
     background-color: #dcdcdc;
   }
+  &__img-box {
+    display: block;
+    padding-top: 5px;
+  }
+  &__img-box:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  &__img-box:active {
+    opacity: 0.3;
+    cursor: pointer;
+  }
   &__title {
     display: inline;
     color: #656565;
@@ -61,11 +73,15 @@
     left: 3px;
   }
   &__slide {
+    display: none;
     position: absolute;
     top: 115px;
     left: 0;
     width: 1170px;
     height: 336px;
+  }
+  &__slide-active {
+    display: block;
   }
   &__slide-list {
     display: flex;

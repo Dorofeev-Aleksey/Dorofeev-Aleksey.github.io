@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин "Укачай-ка"</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__box">
+        <a href="#" class="page-header__logo">
+          <img src="img/logo.jpg" alt="Интернет магазин Укачай-ка" title="Интернет магазин Укачай-ка" width="100%" height="100%">
+          <span class="page-header__name">интернет-магазин</span>
+        </a>
+        <div class="page-header__mail-box">
+          <a href="mailto:ukachaika@gmail.com" class="page-header__mail">ukachaika@gmail.com</a>
+        </div>
+        <div class="page-header__tel-box">
+          <a href="tel:+79858869999" class="page-header__tel">+7 (985) 886-99-99</a>
+          <a href="tel:+79778278888" class="page-header__tel">+7 (977) 827-88-88</a>
+        </div>
+        <div class="page-header__basket">
+          <p class="page-header__basket-title">Корзина:</p>
+          <p class="page-header__basket-text"><span class="page-header__quantity">5 товаров</span> на <span class="page-header__cost">10599</span> рублей</p>
+        </div>
+      </div>
+      <nav class="page-header__nav">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a href="#" class="page-header__link">Главная</a>
+          </li>
+          <li class="page-header__item">
+            <a href="#" class="page-header__link">О нас</a>
+          </li>
+          <li class="page-header__item">
+            <a href="catalog.html" class="page-header__link">Каталог</a>
+          </li>
+          <li class="page-header__item">
+            <a href="#" class="page-header__link">Доставка и сборка</a>
+          </li>
+          <li class="page-header__item">
+            <a href="#" class="page-header__link">Партнерам</a>
+          </li>
+          <li class="page-header__item">
+            <a href="#" class="page-header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="basket">
+        <h3 class="basket__title">Список товаров</h3>
+        <button class="basket__cancel"></button>
+        <div class="basket__box-product">
+          <div class="basket__image-box">
+            <img src="img/popular/05-Belyy-2-1024x683.jpg" class="basket__img" width="234" height="157"/>
+          </div>
+          <h4 class="basket__name">Автоматическая кровать трансформер «Укачай-ка» (с механизмом)</h4>
+          <span class="basket__cost"><span class="basket__price">4820</span> рублей</span>
+          <div class="basket__quantity-box">
+            <button class="basket__quantity-btn basket__quantity-btn--add">+</button>
+            <span class="basket__number">2</span>
+            <button class="basket__quantity-btn basket__quantity-btn--reduce">-</button>
+          </div>
+          <button class="basket__delete"></button>
+        </div>
+        <div class="basket__basket-box">
+          <span class="basket__basket-text">В корзине <span class="basket__basket-number">2 товара</span> на сумму <span class="modal-content__basket-cost">22 400 рублей.</span></span>
+        </div>
+        <div class="basket__btn-box">
+          <button class="basket__back-catalog">Вернуться в каталог</button>
+          <button class="basket__package">Оформить заказ</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <a href="#" class="page-footer__logo-box">
+        <img src="img/logo.jpg" alt="Интернет магазин Укачай-ка" title="Интернет магазин Укачай-ка" width="100%" height="100%">
+        <span class="page-footer__name">интернет-магазин</span>
+      </a>
+      <ul class="page-footer__nav">
+        <li class="page-footer__nav-item">
+          <a href="#" class="page-footer__nav-link">Главная</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a href="#" class="page-footer__nav-link">О нас</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a href="catalog.html" class="page-footer__nav-link">Каталог</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a href="#" class="page-footer__nav-link">Доставка и сборка</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a href="#" class="page-footer__nav-link">Партнерам</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a href="#" class="page-footer__nav-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="page-footer__mail-box">
+        <a href="mailto:ukachaika@gmail.com" class="page-footer__mail">ukachaika@gmail.com</a>
+      </div>
+      <div class="page-footer__tel-box">
+        <a href="tel:+79858869999" class="page-footer__tel">+7 (985) 886-99-99</a>
+        <a href="tel:+79778278888" class="page-footer__tel">+7 (977) 827-88-88</a>
+      </div>
+    </footer>
+    <div class="modal-tel">
+      <a href="#" class="modal-tel__link-box">
+        <div class="modal-tel__phone"></div>
+        <div class="modal-tel__inner"></div>
+        <div class="modal-tel__outer"></div>
+      </a>
+    </div>
+    <div class="modal-content modal-content--closed">
+      <h3 class="modal-content__title">Список товаров</h3>
+      <button class="modal-content__cancel"></button>
+      <div class="modal-content__box-product">
+        <div class="modal-content__image-box">
+          <img src="img/popular/05-Belyy-2-1024x683.jpg" class="modal-content__img" width="234" height="157"/>
+        </div>
+        <h4 class="modal-content__name">Автоматическая кровать трансформер «Укачай-ка» (с механизмом)</h4>
+        <span class="modal-content__cost"><span class="modal-content__price">4820</span> рублей</span>
+        <div class="modal-content__quantity-box">
+          <button class="modal-content__quantity-btn modal-content__quantity-btn--add">+</button>
+          <span class="modal-content__number">2</span>
+          <button class="modal-content__quantity-btn modal-content__quantity-btn--reduce">-</button>
+        </div>
+        <button class="modal-content__delete"></button>
+      </div>
+      <div class="modal-content__basket-box">
+        <span class="modal-content__basket-text">В корзине <span class="modal-content__basket-number">2 товара</span> на сумму <span class="modal-content__basket-cost">22 400 рублей.</span></span>
+      </div>
+      <div class="modal-content__btn-box">
+        <button class="modal-content__back-catalog">Вернуться в каталог</button>
+        <button class="modal-content__package">Оформить заказ</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,7 +4,7 @@
   width: 1170px;
   margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
   &__video-box {
     position: relative;
     width: 368px;
@@ -34,11 +34,7 @@
   }
   &__app-box {
     width: 368px;
-    border: 1px solid #dcdcdc;
-    background: url(../img/android.png) 163px 60px no-repeat,
-                url(../img/apple-ios-logo.png) 72px 60px no-repeat;
-    background-size: 119px 80px,
-                     89px 80px;
+    border: 1px solid #3a8dbd;
   }
   &__title {
     font-size: 24px;
@@ -58,10 +54,57 @@
     color: #a1a1a1;
     margin-left: 5px;
   }
+  &__link-box {
+    margin-left: 55px;
+    margin-top: -7px;
+    margin-bottom: 8px;
+    height: 100px;
+  }
+  &__app-link {
+    display: inline-block;
+    font-size: 0;
+    width: 119px;
+    height: 80px;
+  }
+  &__app-link--ios {
+    background-image: url(../img/apple-ios-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 72px 43px;
+  }
+  &__app-link--android {
+    background-image: url(../img/android.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 119px 80px;
+  }
+  &__app-link:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  &__app-link:active {
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 30px;
+    color: #a1a1a1;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: #faadbf;
+    cursor: pointer;
+  }
+  &__link:active {
+    color: #faadbf;
+    opacity: 0.5;
+    cursor: pointer;
+  }
   &__link-app {
     display: block;
     width: 131px;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 95px;
     color: white;
     font-size: 18px;
