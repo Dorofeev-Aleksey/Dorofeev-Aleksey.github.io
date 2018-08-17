@@ -1,0 +1,32 @@
+/* LESS Document */
+.materials {
+  width: 100%;
+}
+.materials_title {
+  padding-left: 15px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: #0C314C;
+  font-family: 'Roboto', sans-serif;
+}
+.materials_text {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #0C314C;
+}
+.materials_slider-box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.materials_slide {
+  position: relative;
+  width: 30%;
+}
+.materials slick-next::before {
+  color: #0C314C !important;
+}

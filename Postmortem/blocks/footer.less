@@ -1,0 +1,75 @@
+/* LESS Document */
+
+.footer {
+	width: 100%;
+	background-color: #0C314C;
+	padding: 25px 0;
+	&_container {
+		width: 100%;
+		min-width: 300px;
+		margin: 0 auto;
+		max-width: 1370px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&_logo {
+		margin-bottom: 20px;
+		padding-left: 30px;
+	}
+	&_tel-box {
+		height: 80px;
+		padding-left: 70px;
+		margin-bottom: 5px;
+		background-image: url(img/icon-phone.png);
+		background-repeat: no-repeat;
+		background-size: 35px;
+		background-position: 23px 3px;
+	}
+	&_tel {
+		color: white;
+		font-size: 14px;
+		line-height: 22px;
+		font-family: 'Roboto', sans-serif;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&_mail-box {
+		padding-left: 70px;
+		background: url(img/icon-mail.png) no-repeat 23px 0,
+                url(img/icon-clock.png) no-repeat 23px 50px;
+		background-size: 35px, 35px;
+	}
+	&_mail {
+		display: block;
+		color: white;
+		font-size: 14px;
+		padding-top: 5px;
+		line-height: 16px;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 40px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&_mail-text {
+		color: white;
+		font-size: 14px;
+		line-height: 16px;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+@media screen and (min-width: 613px) {
+	.footer {
+		&_container {
+			flex-direction: row;	
+		}
+		&_mail-box {
+			padding-right: 20px;
+		}
+	}
+}

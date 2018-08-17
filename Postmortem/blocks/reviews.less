@@ -1,0 +1,142 @@
+/* LESS Document */
+
+.reviews {
+	width: 100%;
+	&_title {
+		padding-left: 15px;
+		font-size: 22px;
+		line-height: 32px;
+		font-weight: bold;
+		color: white;
+		background-color: #0C314C;
+		font-family: 'Roboto', sans-serif;
+	}
+	&_text {
+		padding: 0 25px;
+		color: #0C314C;
+		font-size: 15px;
+		line-height: 17px;
+		font-family: 'Roboto', sans-serif;
+	}
+	&_container {
+		padding: 0 15px;
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	&_review {
+		background-color: #E3EDF6;
+		padding: 12px 15px;
+		margin-bottom: 10px;
+	}
+	&_review-title {
+		margin-top: 3px;
+		font-size: 16px;
+		line-height: 18px;
+		font-family: 'Roboto', sans-serif;
+		color: #0C314C;
+	}
+	&_review-name {
+		font-size: 16px;
+		line-height: 18px;
+		font-family: 'Roboto', sans-serif;
+		color: #0C314C;
+	}
+	&_preview {
+		color: #0C314C;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		line-height: 16px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+@media screen and (min-width: 510px) {
+	.reviews {
+		&_container {
+			padding: 0 15px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		&_review {
+			width: 43%;
+		}
+	} 
+}
+
+@media screen and (min-width: 613px) {
+	.reviews {
+		&_title {
+			width: 170px;
+			padding-left: 70px;
+			font-size: 24px;
+			line-height: 34px;
+			font-weight: bold;
+		}
+		&_text {
+			padding: 0 30px;
+			color: #0C314C;
+			font-size: 16px;
+			line-height: 18px;
+			font-family: 'Roboto', sans-serif;
+		}
+		&_review {
+			width: 43%;
+			padding: 17px 18px;
+			margin-bottom: 15px;
+		}
+		&_preview {
+			display: block;
+			width: 85px;
+			font-weight: normal;
+			padding: 15px 30px;
+			border: 1px solid #0C314C;
+		}
+	} 
+}
+
+@media screen and (min-width: 800px) {
+	.reviews {
+		&_review {
+			width: 43%;
+			padding: 18px 23px;
+			margin-bottom: 15px;
+		}
+		&_preview {
+			display: block;
+			width: 85px;
+			font-weight: normal;
+			padding: 15px 30px;
+			border: 1px solid #0C314C;
+		}
+	} 
+}
+
+@media screen and (min-width: 900px) {
+	.reviews {
+		&_review {
+			width: 25%;
+			padding: 25px 35px;
+			margin-bottom: 15px;
+		}
+	} 
+}
+
+@media screen and (min-width: 1220px) {
+	.reviews {
+		&_text {
+			display: block;
+			max-width: 1200px;
+			margin: 0 auto;
+			margin-top: 30px;
+			margin-bottom: 25px;
+		}
+	} 
+}
+
+	
