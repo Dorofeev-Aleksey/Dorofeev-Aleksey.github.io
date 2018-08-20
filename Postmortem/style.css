@@ -1368,6 +1368,7 @@ body {
 .materials_slider-box {
   position: relative;
   width: 80%;
+  max-width: 1000px;
   padding: 0 1%;
   margin: 0 auto;
   display: flex;
