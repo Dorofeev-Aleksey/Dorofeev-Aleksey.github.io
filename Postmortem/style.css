@@ -1332,7 +1332,7 @@ body {
   line-height: 16px;
   font-family: 'Roboto', sans-serif;
 }
-@media screen and (min-width: 613px) {
+@media screen and (min-width: 652px) {
   .footer_container {
     flex-direction: row;
   }
@@ -1345,6 +1345,7 @@ body {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: none;
 }
 .materials_title {
   padding-left: 15px;
@@ -1400,16 +1401,39 @@ body {
   cursor: pointer;
 }
 .materials_popup {
+  width: 300px;
+  height: auto;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
   display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(12, 49, 76, 0.5);
-  padding-bottom: 30px;
-  padding-top: 30px;
+  opacity: 0;
+  z-index: 15;
 }
 .materials_container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+.materials_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  outline: none;
+  border: none;
+  background-image: url(img/materials/icon-cross.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.materials_button:active {
+  opacity: 0.7;
 }
 .materials_box-1 {
   padding: 14px 18px;
@@ -1432,11 +1456,26 @@ body {
 .materials_box-2 {
   background-color: #F1F1F1;
   padding: 14px 18px;
+  display: none;
 }
 .materials_span {
   font-size: 18px;
   font-weight: bold;
   padding-left: 8px;
+}
+.materials_overlay {
+  z-index: 8;
+  position: fixed;
+  background-color: #0C314C;
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha(opacity=70);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
 }
 body .materials .slick-next::before {
   color: #0C314C !important;
@@ -1454,6 +1493,9 @@ body .materials .slick-dots li button::before {
   font-size: 9px !important;
 }
 @media screen and (min-width: 634px) {
+  .materials {
+    display: block;
+  }
   .materials_title {
     width: 205px;
     padding-left: 70px;
@@ -1474,6 +1516,25 @@ body .materials .slick-dots li button::before {
   }
   .materials_description-box-3 {
     padding-left: 15px;
+  }
+  .materials_popup {
+    width: 580px;
+    top: 30%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -290px;
+  }
+  .materials_box-2 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .materials_popup {
+    width: 900px;
+    top: 40%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -450px;
   }
 }
 @media screen and (min-width: 1100px) {

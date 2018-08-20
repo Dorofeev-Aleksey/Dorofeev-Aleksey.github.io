@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Untitled Document</title>
+<!--	<link rel="stylesheet" type="text/css" href="style.css"/>-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--
+	<script>
+		$(function()
+			{
+				alert('Подключена последняя версия jQuery через Google хостинг');
+			});
+	</script>
+-->
+	<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!--	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+<!--
+	<link rel="stylesheet" type="text/css" href="https://ozon-st.cdn.ngenix.net/graphics/action/widgets/slick_1_8-0/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://ozon-st.cdn.ngenix.net/graphics/action/widgets/slick_1_8-0/slick-theme.css" />
+-->
+<!--
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+-->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+	<div id="hamburger-icon" title="Menu">
+		<span class="line line-1"></span>
+		<span class="line line-2"></span>
+		<span class="line line-3"></span>
+	</div>
+	<ul class="header_nav">
+		<li class="header_nav-item"><a href="#main" class="header_nav-link" name="main">Главная</a></li>
+		<li class="header_nav-item"><a href="#work" class="header_nav-link">Как&nbsp;мы&nbsp;работаем</a></li>
+		<li class="header_nav-item"><a href="#advantages" class="header_nav-link">Наши&nbsp;приемущества</a></li>
+		<li class="header_nav-item"><a href="#section4" class="header_nav-link">Материалы</a></li>
+		<li class="header_nav-item"><a href="#price" class="header_nav-link">Цены</a></li>
+		<li class="header_nav-item"><a href="#reviews" class="header_nav-link">Отзывы</a></li>
+		<li class="header_nav-item"><a href="#contact" class="header_nav-link">Контакты</a></li>
+	</ul>
+	<div class="header_logo">
+		<picture>
+			<source media="(min-width: 1050px)" srcset="img/logo-desktop.png, logo-desktop-2x.png 2x">
+			<img srcset="img/logo-mob.png, img/logo-mob-2x.png 2x" alt="Клининговая компания Пост Мортент">
+		</picture>
+		<p class="header_logo-text">Специализированная клининговая<br> компания</p>
+	</div>
+	<a class="header_btn-call" href="#">Связаться с нами</a>
+</div>
+<div class="header_type">
+	<ul class="header_type-list">
+		<li class="header_type-item">Уборка захламленных помещений</li>
+		<li class="header_type-item">Уборка мест совершения преступлений</li>
+		<li class="header_type-item">Уборка после длительного пребывания умерших</li>
+		<li class="header_type-item">Уборка после инфекционных больных</li>
+		<li class="header_type-item">Уборка после пожара</li>
+		<li class="header_type-item">Дезинфекция и дезинсекция помещений</li>
+	</ul>
+</div>
+<div class="work">
+	<h2 class="work_title"><a name="work"></a>Как мы работаем?</h2>
+	<ul class="work_list">
+		<li class="work_item">
+			<div class="work_box-number">
+				<span class="work_number">1</span>
+			</div>
+			<div class="work_box-text">
+				<h3 class="work_title-2">Звонок или заявка</h3>
+				<p class="work_text">Закажите обратный звонок или вы можете позвонить нам самостоятельно.</p>
+			</div>
+		</li>
+		<li class="work_item">
+			<div class="work_box-number">
+				<span class="work_number">2</span>
+			</div>
+			<div class="work_box-text">
+				<h3 class="work_title-2">Оценка работ</h3>
+				<p class="work_text">По телефону наш специалист сможет примерно оценить сроки выполнения и цену работ.</p>
+			</div>
+		</li>
+		<li class="work_item">
+			<div class="work_box-number">
+				<span class="work_number">3</span>
+			</div>
+			<div class="work_box-text">
+				<h3 class="work_title-2">Подписываем договор.</h3>
+				<p class="work_text">Мы готовим смету и заключаем договор.</p>
+			</div>
+		</li>
+		<li class="work_item">
+			<div class="work_box-number">
+				<span class="work_number">4</span>
+			</div>
+			<div class="work_box-text">
+				<h3 class="work_title-2">Работа</h3>
+				<p class="work_text">Бригада мастеров выполняет работу по очистке помещения.</p>
+			</div>
+		</li>
+		<li class="work_item">
+			<div class="work_box-number">
+				<span class="work_number">5</span>
+			</div>
+			<div class="work_box-text">
+				<h3 class="work_title-2">Сдача работ</h3>
+				<p class="work_text">Вы получаете очищенное помещение, пригожее для нахождения в нем.</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="connect">
+	<h2 class="connect_title">Свяжитесь с нами</h2>
+	<form id="#form" class="connect_form">
+		<div class="connect_form-box-1">
+			<input class="connect_form-name" type="text" placeholder="Имя">
+			<input class="connect_form-mail" type="email" placeholder="E-mail">
+			<input class="connect_form-tel" type="tel" placeholder="Телефон">
+		</div>
+		<div class="connect_form-box-2">
+			<textarea class="connect_form-message" placeholder="Сообщение"></textarea>
+		</div>
+		<button class="connect_form-submit" type="submit">Отправить</button>
+	</form>
+</div>
+
+<div class="advantages">
+	<h2 class="advantages_title"><a name="advantages"></a>Наши преимущества</h2>
+	<ul class="advantages_list">
+		<li class="advantages_item">
+			<div class="advantages_box-number">
+				<div class="advantages_icon"></div>
+			</div>
+			<div class="advantages_box-text">
+				<h3 class="advantages_title-2">Выгодные цены</h3>
+				<p class="advantages_text">С нами вы экономите благодаря гибкой системе скидок и оптовым закупкам чистящих средств, которые уменьшают стоимость наших услуг в разы.</p>
+			</div>
+		</li>
+		<li class="advantages_item">
+			<div class="advantages_box-number">
+				<div class="advantages_icon"></div>
+			</div>
+			<div class="advantages_box-text">
+				<h3 class="advantages_title-2">Профессионализм</h3>
+				<p class="advantages_text">Уборку выполняют только настоящие специалисты своего дела, что гарантирует отличный результат и существенно сокращает время работы.</p>
+			</div>
+		</li>
+		<li class="advantages_item">
+			<div class="advantages_box-number">
+				<div class="advantages_icon"></div>
+			</div>
+			<div class="advantages_box-text">
+				<h3 class="advantages_title-2">Безопасность</h3>
+				<p class="advantages_text">Мы используем только качественную химию от ведущих мировых производителей, которая абсолютно безвредна для людей и домашних животных.</p>
+			</div>
+		</li>
+		<li class="advantages_item">
+			<div class="advantages_box-number">
+				<div class="advantages_icon"></div>
+			</div>
+			<div class="advantages_box-text">
+				<h3 class="advantages_title-2">Гибкий график </h3>
+				<p class="advantages_text">Мы оказываем наши услуги только в удобное для вас время: даже ночью, в праздники или выходные. Наша уборка доступна 24 часа в сутки 7 дней в неделю.</p>
+			</div>
+		</li>
+		<li class="advantages_item">
+			<div class="advantages_box-number">
+				<div class="advantages_icon"></div>
+			</div>
+			<div class="advantages_box-text">
+				<h3 class="advantages_title-2">Гарантия</h3>
+				<p class="advantages_text">Мы гарантируем сохранность личных вещей, возвращаем все документы и ценные вещи, найденные при уборке.</p>
+			</div>
+		</li>
+
+	</ul>
+</div>
+
+<div class="price">
+	<h2 class="price_title"><a name="price"></a>Цены</h2>
+	<div class="price_title-box">
+		<h3 class="price_title-2 price_title-2-layot">Уборочные работы</h3>
+		<div class="price_table-box price_table-box-2">
+			<h4 class="price_title-3">Подготовительные работы</h4>
+			<table class="price_table price_table-border">
+				<tr class="price_tr">
+					<td class="price_td">Слом и демонтаж и вынос крупной мебели</td>
+					<td class="price_td">шт.</td>
+					<td class="price_td">900 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Слом и демонтаж и вынос прочей мебели</td>
+					<td class="price_td">шт.</td>
+					<td class="price_td">400 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Полное удаление напольного покрытия</td>
+					<td class="price_td"> </td>
+					<td class="price_td"> </td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td price_td-bull">&bull; ковролин, ламинат</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">200 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td price_td-bull">&bull; линолиум</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">300 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td price_td-bull">&bull; паркетная доска</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">400 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Частичное вскрытие напольного покрытия для устранения протечек</td>
+					<td class="price_td"> </td>
+					<td class="price_td">ц/д*</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Демонтаж межкомнатных дверей с коробами</td>
+					<td class="price_td">шт.</td>
+					<td class="price_td">300</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Снятие обоев</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">75</td>
+				</tr>
+			</table>
+		</div>
+		<div class="price_table-box price_table-box-2">
+			<h4 class="price_title-3">Уборочные работы</h4>
+			<table class="price_table">
+				<tr class="price_tr">
+					<td class="price_td">Уборка жилого помещения</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">90 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Уборка ванной/туалетной комнаты с дезинфекционной обработкой</td>
+					<td class="price_td">шт.</td>
+					<td class="price_td">8000 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Чистка потолка</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">150 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Устранение нагара после пожара</td>
+					<td class="price_td">м<sup>2</sup></td>
+					<td class="price_td">250 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Устранение остатков дезинфектанта</td>
+					<td class="price_td"> </td>
+					<td class="price_td">ц/д*</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Упаковка и вынос мусора</td>
+					<td class="price_td"> </td>
+					<td class="price_td">ц/д*</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="price_box-2">
+		<h4 class="price_title-2">Дезинфекционные и дезинсекционные&nbsp;работы</h4>
+		<div class="price_table-box">
+			<table class="price_table price_table-padding">
+					<tr class="price_tr">
+						<td class="price_td">Дезинфекционная обработка жилого помещения</td>
+						<td class="price_td">м<sup>2</sup></td>
+						<td class="price_td">100 р.</td>
+					</tr>
+					<tr class="price_tr">
+						<td class="price_td"> - при заражении ООИ (ВИЧ-инфекция, туберкулез, гепатит С и др.)</td>
+						<td class="price_td">10&nbsp;м<sup>2</sup></td>
+						<td class="price_td">500 р.</td>
+					</tr>
+					<tr class="price_tr">
+						<td class="price_td">Деактивация и удаление биологического материала</td>
+						<td class="price_td">м<sup>2</sup></td>
+						<td class="price_td">1000 р.</td>
+					</tr>
+					<tr class="price_tr">
+						<td class="price_td">Полная аэрозольная дезинфекционная обработка помещения</td>
+						<td class="price_td">м<sup>2</sup></td>
+						<td class="price_td">150 р.</td>
+					</tr>
+					<tr class="price_tr">
+						<td class="price_td">Деактивация и удаление крови с применением препарата "Абсолюцид окси"</td>
+						<td class="price_td">м<sup>2</sup></td>
+						<td class="price_td">800</td>
+					</tr>
+					<tr class="price_tr">
+						<td class="price_td">Упаковка и вынос мусора</td>
+						<td class="price_td"> </td>
+						<td class="price_td">ц/д*</td>
+					</tr>
+				</table>
+		</div>
+	</div>
+	<div class="price_box-2">
+		<h4 class="price_title-2">Организационные работы</h4>
+		<div class="price_table-box">
+			<table class="price_table price_table-padding">
+				<tr class="price_tr">
+					<td class="price_td">Выезд, осмотр, составление плана работ</td>
+					<td class="price_td">шт.</td>
+					<td class="price_td">500 р.</td>
+				</tr>
+				<tr class="price_tr">
+					<td class="price_td">Организация вывоза для утилизации мусора и мебели</td>
+					<td class="price_td"> </td>
+					<td class="price_td">ц/д*</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<div class="reviews">
+	<h2 class="reviews_title"><a name="reviews"></a>Отзывы</h2>
+	<p class="reviews_text">Для прозрачности нашей работы, предлагаем нашим клиентам после выполненных работ сформулировать свои впечатления на бумаге.</p>
+	<div class="reviews_container">
+		<div class="reviews_review">
+			<p class="reviews_review-title"><strong>Отзыв №1</strong> (от 25.12.2013)</p>
+			<p class="reviews_review-name">Франчук Т.Н.</p>
+			<a class="reviews_preview" href="#">Посмотреть</a>
+		</div>
+		<div class="reviews_review">
+			<p class="reviews_review-title"><strong>Отзыв №2</strong> (от 12.08.2014)</p>
+			<p class="reviews_review-name">Анисимов Т.Н.</p>
+			<a class="reviews_preview" href="#">Посмотреть</a>
+		</div>
+		<div class="reviews_review">
+			<p class="reviews_review-title"><strong>Отзыв №3</strong> (от 11.12.2015)</p>
+			<p class="reviews_review-name">Дыховичный Т.Н.</p>
+			<a class="reviews_preview" href="#">Посмотреть</a>
+		</div>
+		<div class="reviews_review">
+			<p class="reviews_review-title"><strong>Отзыв №4</strong> (от 14.12.2015)</p>
+			<p class="reviews_review-name">Ячменькова Т.Н.</p>
+			<a class="reviews_preview" href="#">Посмотреть</a>
+		</div>
+		<div class="reviews_review">
+			<p class="reviews_review-title"><strong>Отзыв №5</strong> (от 25.10.2016)</p>
+			<p class="reviews_review-name">Хлебникова Т.Н.</p>
+			<a class="reviews_preview" href="#">Посмотреть</a>
+		</div>
+		<div class="reviews_review">
+			<p class="reviews_review-title"><strong>Отзыв №6</strong> (от 26.11.2016)</p>
+			<p class="reviews_review-name">Варфоломеева Т.Н.</p>
+			<a class="reviews_preview" href="#">Посмотреть</a>
+		</div>
+	</div>
+</div>
+<div class="materials">
+	<h2 class="materials_title">Материалы</h2>
+	<p class="materials_text">Мы применяем только надежные, хорошо зарекомендовавшие себя средства и препараты. Вы можете ознакомиться с инструкциями и показаниями к применению .</p>
+	<div class="materials_slider-box">
+		<div class="materials_slide">
+			<img class="materials_img" src="img/materials/img-1.jpg" alt="#" width="100%"/>
+		</div>
+		<div class="materials_slide">
+			<img class="materials_img" src="img/materials/img-2.jpg" alt="#" width="100%"/>
+		</div>
+		<div class="materials_slide">
+			<img class="materials_img" src="img/materials/img-3.jpg" alt="#" width="100%"/>
+		</div>
+		<div class="materials_slide">
+			<img class="materials_img" src="img/materials/img-4.jpg" alt="#" width="100%"/>
+		</div>
+		<div class="materials_slide">
+			<img class="materials_img" src="img/materials/img-5.jpg" alt="#" width="100%"/>
+		</div>
+		<div class="materials_slide">
+			<img class="materials_img" src="img/materials/img-6.jpg" alt="#" width="100%"/>
+		</div>
+	</div>
+</div>
+<div class="materials_popup materials_popup-1">
+	<div class="materials_container">
+		<div class="materials_box-1">
+			<div class="materials_img-box">
+				<img class="materials_img" src="img/materials/img-1.jpg" alt="#" width="100%"/>
+			</div>
+			<div class="materials_description-box">
+				<h3 class="materials_product-name">Авансепт-спрей</h3>
+				<p class="materials_description"><b>«Авансепт-спрей»</b> — прозрачная, готовая к применению жидкость 4-го класса опасности со слабым запахом спирта и применяемой отдушки. Выпускается во флаконах из полимерных материалов объемом 0,5–0,75 л с насадками-распылителями.</p>
+				<p class="materials_description"><b>Состав:</b> средство содержит 1-пропанол и синергетические функциональные добавки: полигексаметиленбигуанид гидрохлорид, алкилдиметилбензиламмоний хлорид, додециламин и другие вспомогательные компоненты.</p>
+			</div>
+		</div>
+		<div class="materials_box-2">
+			<p class="materials_description"><b>Антимикробная активность:</b> «Авансепт-спрей» обладает хорошими моющими свойствами и активностью по отношению к грамотрицательным и грамположительным бактериям (в том числе возбудителям внутрибольничных инфекций, кишечным инфекциям и туберкулезным бактериям), вирусов (включая гепатиты всех видов, ВИЧ, аденовируса) и грибам рода Трихофитон, Кандида. Он активно разрушает даже биологические пленки.</p>
+			<p class="materials_description"><b>Назначение:</b> «Авансепт-спрей» используется для обработки оборудования, приборов и предметов медицинского назначения. Его применяют в помещениях:</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> лечебно-профилактических учреждений (в том числе в приемных, реанимационных и операционных отделениях, смотровых и стоматологических кабинетах, перевязочных);</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> микробиологических, клинических и других лабораториях;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> объектов коммунального хозяйства;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> предприятий общественного питания и торговли.</p>
+			<p class="materials_description">Также применяется для дезинфекции санитарного транспорта после транспортировки больного с инфекционным заболеванием.</p>
+		</div>
+	</div>
+</div>
+<div class="materials_popup  materials_popup-2">
+	<div class="materials_container">
+		<div class="materials_box-1">
+			<div class="materials_img-box">
+				<img class="materials_img" src="img/materials/img-2.jpg" alt="#" width="100%"/>
+			</div>
+			<div class="materials_description-box">
+				<h3 class="materials_product-name">Хлорамин Б</h3>
+				<p class="materials_description"><b>Хлорамины</b> – это неорганические соединения, производные аммиака, широко применяемые для дезинфекции и очистки. Рекомендованным Минздравом России дезинфекционным средством является хлорамин Б – натриевая соль хлорамина бензосульфатной кислоты. Данное средство разрешено к применению даже при таких серьезных заболеваниях, как туберкулёз, полиомиелит, сибирская язва, холера.</p>
+				<p class="materials_description"><b>Состав:</b> представляет собой натриевую соль хлорамида бензолсульфокислоты, выпускается в виде кристаллического порошка от белого до светло-желтого цвета со слабым запахом хлора. Содержание активного хлора в средстве должно быть в пределах от 24 % до 27 %. Выпускается в полиэтиленовых пакетах по 100 — 500 г, транспортная упаковка — мешки до 30 кг.</p>
+			</div>
+		</div>
+		<div class="materials_box-2">
+			<p class="materials_description"><b>Свойства:</b> Хлорамин Б – это кристаллический белый или светло-жёлтый порошок, наблюдается слабый запах хлора. Содержание активного хлора не превышает 24%-27%. Его относят к 3 классу умеренно опасных веществ, после попадания на кожу вызывает местно-раздражительный эффект, по степени летучести малоопасен.</p>
+			<p class="materials_description">Вследствие высоких обеззараживающий свойств хлорамин Б часто используются в дезинфекции. <b>Его применяют при:</b></p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> дезинфекции медучреждений, образовательных организаций, предприятий пищевой промышленности, общественных мест;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> обеззараживании медоборудования;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> дезинфекции постельного и нательного белья, а также предметов обихода больных;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> очищении инфицированных ран.</p>
+		</div>
+	</div>
+</div>
+<div class="materials_popup materials_popup-3">
+	<div class="materials_container">
+		<div class="materials_box-1">
+			<div class="materials_img-box">
+				<img class="materials_img" src="img/materials/img-3.jpg" alt="#" width="100%"/>
+			</div>
+			<div class="materials_description-box materials_description-box-3">
+				<h3 class="materials_product-name">Абсолюцид окси</h3>
+				<p class="materials_description">Уникальный порошкообразный кислородсодержащий препарат для дезинфекции поверхностей и мединструментов. Легко растворим, практически без запаха. Действующее вещество - активированная перекись водорода (32%(!)). Обладает максимально широким спектром микробиологической активности, отличными моющими свойствами, не фиксирует органические загрязнения, рабочий раствор не имеет запаха и может использоваться многократно.</p>
+				<p class="materials_description"><b>Состав:</b> содержит пероксосольват фторида калия, поверхностно-активные вещества и ингибитор коррозии.</p>
+			</div>
+		</div>
+		<div class="materials_box-2">
+			<p class="materials_description"><b>Применение:</b> для дезинфекции различных объектов используются 0,25-3,0% (кроме возбудителей полиомиелита – 4%) концентрация растворов. Обработка объектов проводится способом протирания и погружения. Рекомендованные режимы при дезинфекции различных объектов приведены в таблицах инструкции по применению.</p>
+			<p class="materials_description"><b>Свойства:</b> порошкообразное средство белого цвета, допускается оттенок желтизны, хорошо растворяется в воде или в форме таблеток весом 10,0±1 г., растворяются в воде в течение 20,0±2 минут. Полученный прозрачный, бесцветный, без резкого запаха раствор обладает антимикробной активностью в отношении бактерий, включая возбудителей туберкулеза и особо опасных инфекций – чумы, холеры, туляремии, легионеллеза, грибов – возбудителей дерматофитии и кандидоза, вирусов – возбудителей гепатита, ВИЧ-инфекции, полиомиелита и спороцидной активностью, в отношении возбудителей сибирской язвы.</p>
+		</div>
+	</div>
+</div>
+<div class="materials_popup materials_popup-4">
+	<div class="materials_container">
+		<div class="materials_box-1">
+			<div class="materials_img-box">
+				<img class="materials_img" src="img/materials/img-4.jpg" alt="#" width="100%"/>
+			</div>
+			<div class="materials_description-box">
+				<h3 class="materials_product-name">Синузан</h3>
+				<p class="materials_description"><b>Инсектицид «Синузан»</b> представляет собой эмульсию желтого оттенка с концентрацией около 50% и неприятным запахом. Основным действующим веществом является хлорпирифос, 48% которого содержится в ядохимикате. Кроме этого в состав входят растворители и усилители действия.</p>
+				<p class="materials_description"><b>Состав:</b> 48% концентрат эмульсии. Действующее вещество - Хлорпирифос.</p>
+			</div>
+		</div>
+		<div class="materials_box-2">
+			<p class="materials_description"><b>Применение:</b> на объектах различного назначения: производственные, пищевые, ЛПУ, жилые, детские (кроме спален и игровых комнат) в отсутствии детей, против комаров в водоемах: подвалов жилых домов, сточных вод, пожарных емкостей, в водоемах нерыбохозяйственного значения.</p>
+			<p class="materials_description"><b>Особенности:</b> Синузан является сертифицированным препаратом, имеющим широкий спектр действия, а также характеризуется экономичным расходом. Специфический запах средства является сигналом для того, чтобы быстро покинуть обработанное помещение, чтобы не отравиться препаратом. При длительном контакте испарения Синузана могут быть губительными для людей и животных. Запрещено применять средство для обработки одежды и постельного белья.</p>
+		</div>
+	</div>
+</div>
+<div class="materials_popup materials_popup-5">
+	<div class="materials_container">
+		<div class="materials_box-1">
+			<div class="materials_img-box">
+				<img class="materials_img" src="img/materials/img-5.jpg" alt="#" width="100%"/>
+			</div>
+			<div class="materials_description-box">
+				<h3 class="materials_product-name">Цифокс</h3>
+				<p class="materials_description"><b>Цифокс</b> – инсектоакарицидный концентрат. Данное средство предназначено для сотрудников организаций, имеющих право проводить дезинфекционные мероприятия.</p>
+				<p class="materials_description"><b>Состав:</b> циперметрин (25%), растворители, эмульгаторы, отдушка. Циперметрин – основной действующий компонент Цифокса.</p>
+			</div>
+		</div>
+		<div class="materials_box-2">
+			<p class="materials_description"><b>Применение:</b> на объектах различного назначения: производственные, пищевые, ЛПУ, жилые, детские (кроме спален и игровых комнат) в отсутствии детей, против комаров в водоемах: подвалов жилых домов, сточных вод, пожарных емкостей, в водоемах нерыбохозяйственного значения.</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> средство показывает высокую эффективность не только в квартирах и домах, но и на дачных участках, в искусственных водоёмах;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> средство губительно действует на многих вредных насекомых. Цифокс часто применяется при борьбе с клопами, мухами, блохами, комарами, муравьями, клещами, тараканами;</p>
+			<p class="materials_description"><span class="materials_span">&#183;</span> препарат губит не только взрослых особей, но личинок паразитов и вредителей;</p>
+		</div>
+	</div>
+</div>
+<div class="materials_popup materials_popup-6">
+	<div class="materials_container">
+		<div class="materials_box-1">
+			<div class="materials_img-box">
+				<img class="materials_img" src="img/materials/img-6.jpg" alt="#" width="100%"/>
+			</div>
+			<div class="materials_description-box materials_description-box-3">
+				<p class="materials_description"><b>Цифокс</b> – инсектоакарицидный концентрат. Данное средство предназначено для сотрудников организаций, имеющих право проводить дезинфекционные мероприятия.</p>
+				<p class="materials_description"><b>Состав:</b> действующие вещества: 5% алкилдиметилбензиламмоний хлорида (ЧАС) и 8% глиоксаля, а также поверхностно-активное вещество, краситель и вода.</p>
+			</div>
+		</div>
+		<div class="materials_box-2">
+			<p class="materials_description"><b>Свойства:</b> обладает бактерицидными, туберкулоцидными, вирулицидными, фунгицидными, а также моющими свойствами.</p>
+			<p class="materials_description"><b>Особые сведения:</b> При утечке рассматриваемого раствора в пролитую часть средства необходимо добавить большое количество обычной воды или адсорбировать ее посредством впитывающих веществ (например, песком, опилками, силикагелем или ветошью), после чего отправить на утилизацию. При этом очень важно надеть резиновые перчатки, сапоги, фартук, универсальный респиратор и очки.</p>
+		</div>
+	</div>
+</div>
+<div class="contact">
+	<h2 class="contact_title"><a name="contact"></a>Контакты</h2>
+	<p class="contact_text">Любые интересующие Вас вопросы вы можете задать, обратившись по телефону +7(495)233-6935</p>
+	<p class="contact_text">Вы так же можете получить консультацию обратившись по электронной почте mail@post-mortem.ru или воспользоваться формой быстрой связи на данном сайте.</p>
+	<form class="connect_form contact_form">
+		<div class="connect_form-box-1">
+			<input class="connect_form-name" type="text" placeholder="Имя">
+			<input class="connect_form-mail" type="email" placeholder="E-mail">
+			<input class="connect_form-tel" type="tel" placeholder="Телефон">
+		</div>
+		<div class="connect_form-box-2">
+			<textarea class="connect_form-message" placeholder="Сообщение"></textarea>
+		</div>
+		<button class="connect_form-submit" type="submit">Отправить</button>
+	</form>
+	<p class="contact_text"><strong>Ниже вы можете ознакомиться с организационными документами:</strong></p>
+	<a class="contact_document" href="#">Свидетельство о регистрации</a>
+	<a class="contact_document contact_document-2" href="#">Выписка из ЕГРИП (с указанием видов деятельности)</a>
+	<p class="contact_text">В соответствии с  Федеральным законом от 08.11.2007 N 258-ФЗ "О внесении изменений в отдельные законодательные акты Российской Федерации и признании утратившими силу отдельных положений законодательных актов Российской Федерации по вопросам  лицензирования отдельных видов деятельности" дезинфекционная деятельность исключена из лицензируемых видов деятельности и не  подлежит санитарно-эпидемиологической экспертизе с последующей выдачей санитарно-эпидемиологического заключения.</p>
+	<p class="contact_text">Условия организации и осуществления дезинфекционной деятельности (в том числе дезинсекции и дератизации  как ее раздела) оцениваются в порядке проведения государственного санитарно-эпидемиологического надзора, в ходе которого устанавливается соответствие  деятельности требованиям:</p>
+	<p class="contact_text contact_text-color">СП 3.5.1378-03 «Санитарно-эпидемиологические требования к организации и осуществлению дезинфекционной деятельности»
+СанПиН 3.5.2.1376-03 «Санитарно-эпидемиологические требования к организации и проведению дезинсекционных мероприятий против синантропных членистоногих»</p>
+</div>
+
+<div class="footer">
+	<div class="footer_container">
+		<div class="footer_logo">
+			<picture>
+				<source media="(min-width: 1050px)" srcset="img/logo-desktop.png, logo-desktop-2x.png 2x">
+				<img srcset="img/logo-mob.png, img/logo-mob-2x.png 2x" alt="Клининговая компания Пост Мортент">
+			</picture>
+		</div>
+
+		<div class="footer_tel-box">
+			<a class="footer_tel" href="tel:+74952336935">+7(495) 233-6935</a>
+			<br>
+			<a class="footer_tel" href="#">+7(926) 800-1743</a>
+		</div>
+		<div class="footer_mail-box">
+			<a class="footer_mail" href="mailto:mail@post-mortem.ru">mail@post-mortem.ru</a>
+			<p class="footer_mail-text">Круглосуточно</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("a[href*=#]").bind("click", function(e){
+		var anchor = $(this);
+		var name = anchor.attr("href").replace(new RegExp("#", "gi"), "");
+		$('html, body').stop().animate({
+			scrollTop: $("a[name=" + name + "]").offset().top
+		}, 500);
+		e.preventDefault();
+		return false;
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+			debugger;
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!")
+						}
+            });
+    });
+});
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			var hamburger = $('#hamburger-icon'),
+					navDiv = $('.header_nav');
+				hamburger.click(function() {
+					 hamburger.toggleClass('active');
+					 navDiv.slideToggle();
+					 return false;
+
+			});
+		});
+</script>
+<script type="text/javascript">
+	$('.materials_slider-box').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+	arrows: true,
+	infinite: true,
+	dots: true,
+  focusOnSelect: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+</body>
+</html>

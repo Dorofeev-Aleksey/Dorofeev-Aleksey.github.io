@@ -4,6 +4,7 @@
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	display: none;
 	&_title {
 		padding-left: 15px;
 		font-size: 22px;
@@ -58,25 +59,44 @@
 		cursor: pointer;
 	}
 	&_popup {
+		width: 300px;
+		height: auto;
+		position: fixed;
+		top: 30%;
+		left: 50%;
+		margin-top: -150px;
+		margin-left: -150px;
 		display: none;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(12, 49,76 , 0.5);
-		padding-bottom: 30px;
-		padding-top: 30px;
+		opacity: 0; 
+		z-index: 15;
 	}
 	&_container {
-		width: 70%;
+		width: 100%;
 		margin: 0 auto;
+		position: relative;
+	}
+	&_button {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 24px;
+		height: 24px;
+		background-color: white;
+		outline: none;
+		border: none;
+		background-image: url(img/materials/icon-cross.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		&:active {
+			opacity: 0.7;
+		}
 	}
 	&_box-1 {
 		padding: 14px 18px;
 		background-color: white;
 	}
-	&_description-box {
-		
-	}
-	
 	&_product-name {
 		margin-top: 0;
 		padding-top: 20px;
@@ -94,11 +114,26 @@
 	&_box-2 {
 		background-color: #F1F1F1;
 		padding: 14px 18px;
+		display: none;
 	}
 	&_span {
 		font-size: 18px;
 		font-weight: bold;
 		padding-left: 8px;
+	}
+	&_overlay {
+		z-index: 8;
+		position: fixed;
+		background-color: #0C314C;
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		filter: alpha(opacity=70);
+		width: 100%; 
+		height: 100%;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		display: none;
 	}
 }
 
@@ -121,8 +156,11 @@ body .materials .slick-dots li button::before {
 	font-size: 9px !important;
 }
 
+
+
 @media screen and (min-width: 634px) {
 	.materials {
+		display: block;
 		&_title {
 			width: 205px;
 			padding-left: 70px;
@@ -144,6 +182,28 @@ body .materials .slick-dots li button::before {
 		&_description-box-3 {
 			padding-left: 15px;
 	  }
+		&_popup {
+			width: 580px;
+			top: 30%;
+			left: 50%;
+			margin-top: -150px;
+			margin-left: -290px;
+		}
+		&_box-2 {
+			display: block;
+		}
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.materials {
+		&_popup {
+			width: 900px;
+			top: 40%;
+			left: 50%;
+			margin-top: -150px;
+			margin-left: -450px;
+		}
 	}
 }
 
